@@ -1,0 +1,9 @@
+version: "1.0"
+info:
+  model: int-scaffold
+packages:
+- name: IT_Mauro_hybridProject
+  gitServerName: IT_MS_GIT
+  gitUrl: https://github.com/stramauro
+  gitUsername: stramauro
+  gitBranch: main
