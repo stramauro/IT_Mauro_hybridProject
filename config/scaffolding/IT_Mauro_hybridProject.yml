@@ -7,3 +7,58 @@ packages:
   gitUrl: https://github.com/stramauro
   gitUsername: stramauro
   gitBranch: main
+- name: WmKafkaAdapter
+  wpmServer: https://packages.webmethods.io
+  wpmRegistry: licensed
+services:
+- serviceName: project.it_mauro_hybrid.WmKafkaAdapter.com_wm_adapter_wmkafka_KafkaAdapter.connections:ApacheKafka_Mauro
+  packages:
+  - name: IT_Mauro_hybridProject
+    version: "1.0"
+  - name: WmKafkaAdapter
+    version: 9.6.0.0.26
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+configurationVariables:
+  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmKafkaAdapter.com_wm_adapter_wmkafka_KafkaAdapter.connections.ApacheKafka_Mauro.connectionManagerSettings.startupBackoffSecs
+  : "10"
+  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmKafkaAdapter.com_wm_adapter_wmkafka_KafkaAdapter.connections.ApacheKafka_Mauro.connectionManagerSettings.minimumPoolSize
+  : "1"
+  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmKafkaAdapter.com_wm_adapter_wmkafka_KafkaAdapter.connections.ApacheKafka_Mauro.connectionSettings.autoCommitInterval
+  : "5000"
+  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmKafkaAdapter.com_wm_adapter_wmkafka_KafkaAdapter.connections.ApacheKafka_Mauro.connectionSettings.valueDeserializer
+  : com.wm.adapter.wmkafka.idata.IDataDeserializer
+  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmKafkaAdapter.com_wm_adapter_wmkafka_KafkaAdapter.connections.ApacheKafka_Mauro.connectionSettings.keyDeserializer
+  : com.wm.adapter.wmkafka.idata.IDataDeserializer
+  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmKafkaAdapter.com_wm_adapter_wmkafka_KafkaAdapter.connections.ApacheKafka_Mauro.connectionSettings.seesionTimeOut
+  : "45000"
+  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmKafkaAdapter.com_wm_adapter_wmkafka_KafkaAdapter.connections.ApacheKafka_Mauro.connectionManagerSettings.startupRetryCount
+  : "0"
+  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmKafkaAdapter.com_wm_adapter_wmkafka_KafkaAdapter.connections.ApacheKafka_Mauro.connectionSettings.clientID
+  : ""
+  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmKafkaAdapter.com_wm_adapter_wmkafka_KafkaAdapter.connections.ApacheKafka_Mauro.connectionSettings.autoOffsetReset
+  : earliest
+  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmKafkaAdapter.com_wm_adapter_wmkafka_KafkaAdapter.connections.ApacheKafka_Mauro.connectionManagerSettings.blockingTimeout
+  : "1000"
+  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmKafkaAdapter.com_wm_adapter_wmkafka_KafkaAdapter.connections.ApacheKafka_Mauro.connectionEnabled
+  : "false"
+  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmKafkaAdapter.com_wm_adapter_wmkafka_KafkaAdapter.connections.ApacheKafka_Mauro.connectionSettings.groupId
+  : IWHI
+  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmKafkaAdapter.com_wm_adapter_wmkafka_KafkaAdapter.connections.ApacheKafka_Mauro.connectionManagerSettings.maximumPoolSize
+  : "10"
+  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmKafkaAdapter.com_wm_adapter_wmkafka_KafkaAdapter.connections.ApacheKafka_Mauro.connectionManagerSettings.poolable
+  : "false"
+  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmKafkaAdapter.com_wm_adapter_wmkafka_KafkaAdapter.connections.ApacheKafka_Mauro.connectionManagerSettings.expireTimeout
+  : "1000"
+  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmKafkaAdapter.com_wm_adapter_wmkafka_KafkaAdapter.connections.ApacheKafka_Mauro.connectionManagerSettings.poolIncrementSize
+  : "1"
+  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmKafkaAdapter.com_wm_adapter_wmkafka_KafkaAdapter.connections.ApacheKafka_Mauro.connectionSettings.kafkaVersion
+  : v11+
+  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmKafkaAdapter.com_wm_adapter_wmkafka_KafkaAdapter.connections.ApacheKafka_Mauro.connectionSettings.deserializerErrorHandler
+  : ""
+  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmKafkaAdapter.com_wm_adapter_wmkafka_KafkaAdapter.connections.ApacheKafka_Mauro.connectionSettings.enableAutoCommit
+  : "true"
+  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmKafkaAdapter.com_wm_adapter_wmkafka_KafkaAdapter.connections.ApacheKafka_Mauro.connectionSettings.serverList
+  : apache-broker:9092
+  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmKafkaAdapter.com_wm_adapter_wmkafka_KafkaAdapter.connections.ApacheKafka_Mauro.connectionSettings.otherProperties
+  : ""
