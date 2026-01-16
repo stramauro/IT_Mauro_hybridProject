@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<FLOW VERSION="3.2" CLEANUP="false">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<INVOKE NAME="Math" SERVICE="pub.math:randomDouble">
+  <COMMENT></COMMENT>
+</INVOKE>
+
+<INVOKE NAME="Date" SERVICE="pub.date:getCurrentDate">
+  <COMMENT></COMMENT>
+</INVOKE>
+
+<MAP NAME="TRANSFORM" TIMEOUT="" MODE="STANDALONE">
+
+  <!-- nodes -->
+
+<MAPINVOKE NAME="Math" SERVICE="pub.math:toNumber" VALIDATE-IN="$none" VALIDATE-OUT="$none" INVOKE-ORDER="0">
+
+  <!-- nodes -->
+
+<MAP MODE="INVOKEINPUT">
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/number;1;0" TO="/num;1;0">
+</MAPCOPY>
+
+<MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" GLOBALVARIABLES="false" FIELD="/convertAs;1;0">
+  <DATA ENCODING="XMLValues" I18N="true">
+
+<Values version="2.0">
+  <value name="xml">java.lang.Integer</value>
+</Values>
+</DATA>
+</MAPSET>
+</MAP>
+
+<MAP MODE="INVOKEOUTPUT">
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/num;3;0" TO="/OrderID;3.6;0">
+</MAPCOPY>
+</MAP>
+</MAPINVOKE>
+
+<MAPDELETE FIELD="/number;1;0">
+</MAPDELETE>
+</MAP>
+
+<INVOKE NAME="Invoke predefined:com.wm.adapter.wmjdbc.JDBCAdapter" TIMEOUT="" SERVICE="project.it_mauro_hybrid.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:ADD_ORDER" VALIDATE-IN="" VALIDATE-OUT="">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<MAP MODE="INPUT">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/date;3.9;0" TO="/ADD_ORDERInput;2;0/order_date;3;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/OrderID;3.6;0" TO="/ADD_ORDERInput;2;0/order_id;3.6;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/NEWORDER;2;0/first_name;1;0" TO="/ADD_ORDERInput;2;0/first_name;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/NEWORDER;2;0/last_name;1;0" TO="/ADD_ORDERInput;2;0/last_name;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/NEWORDER;2;0/customer;1;0" TO="/ADD_ORDERInput;2;0/customer;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/NEWORDER;2;0/product_name;1;0" TO="/ADD_ORDERInput;2;0/product_name;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/NEWORDER;2;0/product_code;1;0" TO="/ADD_ORDERInput;2;0/product_code;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/NEWORDER;2;0/opt_in;3.1;0" TO="/ADD_ORDERInput;2;0/opt_in;3.1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/NEWORDER;2;0/comment;1;0" TO="/ADD_ORDERInput;2;0/comment;1;0">
+</MAPCOPY>
+
+<MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" GLOBALVARIABLES="false" FIELD="/$connectionName;1;0">
+  <DATA ENCODING="XMLValues" I18N="true">
+
+<Values version="2.0">
+  <value name="xml">project.it_mauro_hybrid.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:PostgreSQL_Mauro</value>
+</Values>
+</DATA>
+</MAPSET>
+</MAP>
+
+<MAP MODE="OUTPUT">
+  <COMMENT></COMMENT>
+</MAP>
+</INVOKE>
+</FLOW>
