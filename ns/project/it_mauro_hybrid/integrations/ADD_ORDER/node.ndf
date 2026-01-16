@@ -185,9 +185,8 @@
   <value name="retry_max">0</value>
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
-    <value name="createdBy">Mauro.Stramazzotti@ibm.com</value>
-    <value name="createdDate">1768576231333</value>
-    <value name="lastModifiedDate">1768576231333</value>
+    <value name="lastModifiedBy">Mauro.Stramazzotti@ibm.com</value>
+    <value name="lastModifiedDate">1768576533492</value>
     <value name="displayName">ADD_ORDER</value>
     <value name="description"></value>
     <array name="appList" type="record" depth="1">
@@ -210,7 +209,7 @@
           <value name="displayName">randomDouble</value>
           <value name="serviceName">pub.math:randomDouble</value>
           <Boolean name="enabled">true</Boolean>
-          <double name="rank" type="Double">0.03</double>
+          <double name="rank" type="Double">0.7</double>
         </record>
         <null name="outputMapSet"/>
         <null name="mapSet"/>
@@ -220,6 +219,28 @@
         <number name="ui_step_index" type="Long">1</number>
       </record>
       <record name="/1" javaclass="com.wm.util.Values">
+        <null name="name"/>
+        <value name="itemType">SERVICES</value>
+        <record name="serviceInfo" javaclass="com.wm.util.Values">
+          <value name="groupDisplayName">Math</value>
+          <value name="groupName">math</value>
+          <null name="services"/>
+        </record>
+        <record name="serviceName" javaclass="com.wm.util.Values">
+          <value name="transformerSupport">true</value>
+          <value name="displayName">multiplyInts</value>
+          <value name="serviceName">pub.math:multiplyInts</value>
+          <Boolean name="enabled">true</Boolean>
+          <double name="rank" type="Double">0.7</double>
+        </record>
+        <null name="outputMapSet"/>
+        <null name="mapSet"/>
+        <number name="ui_step_index" type="Long">2</number>
+        <value name="nodePathNew">1</value>
+        <number name="nodeIndex" type="Long">1</number>
+        <number name="lineNumberForDebug" type="Long">2</number>
+      </record>
+      <record name="/2" javaclass="com.wm.util.Values">
         <null name="name"/>
         <value name="itemType">SERVICES</value>
         <record name="serviceInfo" javaclass="com.wm.util.Values">
@@ -236,17 +257,18 @@
         </record>
         <null name="outputMapSet"/>
         <null name="mapSet"/>
-        <value name="nodePathNew">1</value>
-        <number name="nodeIndex" type="Long">1</number>
-        <number name="lineNumberForDebug" type="Long">2</number>
-      </record>
-      <record name="/2" javaclass="com.wm.util.Values">
-        <value name="itemType">CONTROLS</value>
-        <value name="name">TRANSFORM</value>
-        <number name="ui_step_index" type="Long">3</number>
         <value name="nodePathNew">2</value>
         <number name="nodeIndex" type="Long">2</number>
         <number name="lineNumberForDebug" type="Long">3</number>
+        <Boolean name="hasBreakPoint">true</Boolean>
+      </record>
+      <record name="/3" javaclass="com.wm.util.Values">
+        <value name="itemType">CONTROLS</value>
+        <value name="name">TRANSFORM</value>
+        <number name="ui_step_index" type="Long">4</number>
+        <value name="nodePathNew">3</value>
+        <number name="nodeIndex" type="Long">3</number>
+        <number name="lineNumberForDebug" type="Long">4</number>
         <array name="map" type="object" depth="1" javaclass="java.lang.Object">
         </array>
         <array name="mapSet" type="object" depth="1" javaclass="java.lang.Object">
@@ -258,20 +280,26 @@
         <array name="lookupTransformer" type="object" depth="1" javaclass="java.lang.Object">
         </array>
       </record>
-      <record name="/2/0" javaclass="com.wm.util.Values">
+      <record name="/3/0" javaclass="com.wm.util.Values">
         <value name="itemType">SERVICES</value>
         <Boolean name="serviceReferenceResolved">true</Boolean>
+        <record name="serviceInfo" javaclass="com.wm.util.Values">
+          <value name="groupName">math</value>
+          <value name="groupDisplayName">Math</value>
+        </record>
         <record name="serviceName" javaclass="com.wm.util.Values">
+          <value name="transformerSupport">true</value>
           <value name="displayName">toNumber</value>
           <value name="serviceName">pub.math:toNumber</value>
-          <value name="transformerSupport">true</value>
+          <Boolean name="enabled">true</Boolean>
+          <double name="rank" type="Double">0.7</double>
         </record>
-        <array name="mapSet" type="object" depth="1" javaclass="java.lang.Object">
-        </array>
+        <null name="outputMapSet"/>
+        <null name="mapSet"/>
       </record>
-      <record name="/2/1" javaclass="com.wm.util.Values">
+      <record name="/3/1" javaclass="com.wm.util.Values">
       </record>
-      <record name="/3" javaclass="com.wm.util.Values">
+      <record name="/4" javaclass="com.wm.util.Values">
         <value name="itemType">APPS</value>
         <value name="id">com.wm.adapter.wmjdbc.JDBCAdapter</value>
         <value name="name">Database</value>
