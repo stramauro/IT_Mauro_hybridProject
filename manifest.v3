@@ -10,17 +10,18 @@
   <null name="replication_services"/>
   <record name="requires" javaclass="com.wm.util.Values">
     <value name="WmKafkaAdapter">9.6.0.0.26</value>
+    <value name="WmJDBCAdapter">10.3.0.0.34</value>
   </record>
   <null name="listACL"/>
   <value name="webappLoad">yes</value>
   <value name="reloadWithDependentPackage">yes</value>
-  <value name="build">11</value>
+  <value name="build">12</value>
   <null name="description"/>
   <value name="created_date">15-12-2025 10:45:21 GMT</value>
   <null name="extendedProperties"/>
   <null name="target_server_version"/>
   <value name="isProjectPackage">true</value>
-  <value name="lastUpdated">2026-01-16T13:52:53.717063089Z</value>
+  <value name="lastUpdated">2026-01-16T13:52:59.843302315Z</value>
   <value name="wmProjectId">fla12c7a6a7738b285dd1ce1</value>
   <value name="creator">Mauro Stramazzotti</value>
 </Values>
