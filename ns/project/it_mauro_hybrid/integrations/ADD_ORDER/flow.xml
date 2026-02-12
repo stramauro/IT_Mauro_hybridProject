@@ -76,6 +76,18 @@
         <value name="node_type">unknown</value>
         <value name="node_subtype">unknown</value>
         <value name="is_public">false</value>
+        <value name="field_name">orderID</value>
+        <value name="field_type">object</value>
+        <value name="field_dim">0</value>
+        <value name="wrapper_type">java.lang.Integer</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
         <value name="field_name">quantity</value>
         <value name="field_type">object</value>
         <value name="field_dim">0</value>
@@ -317,7 +329,7 @@
 
   <!-- nodes -->
 
-<MAPCOPY FROM="/num;3;0" TO="/orderID;3.6;0">
+<MAPCOPY FROM="/num;3;0" TO="/orderID(1);3.6;0">
 </MAPCOPY>
 </MAP>
 </MAPINVOKE>
@@ -344,6 +356,9 @@
 </MAPINVOKE>
 
 <MAPDELETE FIELD="/orderID(1);3.6;0">
+</MAPDELETE>
+
+<MAPDELETE FIELD="/orderID;3;0">
 </MAPDELETE>
 </MAP>
 
@@ -740,6 +755,18 @@
         <value name="form_qualified">false</value>
         <value name="is_global">false</value>
       </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">orderID</value>
+        <value name="field_type">object</value>
+        <value name="field_dim">0</value>
+        <value name="wrapper_type">java.lang.Integer</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
     </array>
     <value name="modifiable">true</value>
   </record>
@@ -747,9 +774,6 @@
 </MAPSOURCE>
 
   <!-- nodes -->
-
-<MAPCOPY FROM="/orderID;3.6;0" TO="/ADD_ORDERInput;2;0/order_id;3.6;0">
-</MAPCOPY>
 
 <MAPCOPY FROM="/quantity;3.6;0" TO="/ADD_ORDERInput;2;0/quantity;3.6;0">
 </MAPCOPY>
@@ -773,6 +797,12 @@
 </MAPCOPY>
 
 <MAPCOPY FROM="/NEWORDER;2;0/comment;1;0" TO="/ADD_ORDERInput;2;0/comment;1;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/orderID(1);3.6;0" TO="/ADD_ORDERInput;2;0/order_id;3.6;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/date;3.9;0" TO="/ADD_ORDERInput;2;0/order_date;3;0">
 </MAPCOPY>
 
 <MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" GLOBALVARIABLES="false" FIELD="/$connectionName;1;0">
