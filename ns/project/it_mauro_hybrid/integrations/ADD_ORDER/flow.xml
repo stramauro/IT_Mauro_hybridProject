@@ -218,7 +218,7 @@
           <value name="field_largerEditor">false</value>
           <value name="field_password">false</value>
           <value name="field_usereditable">false</value>
-          <value name="id">acb6e490-0827-11f1-a806-39a7af0ee02f</value>
+          <value name="id">21d9f6d0-0829-11f1-8c6f-b311dc14736c</value>
         </record>
         <value name="is_public">false</value>
         <value name="field_name">NEWORDER</value>
@@ -232,7 +232,7 @@
             <value name="node_type">unknown</value>
             <value name="node_subtype">unknown</value>
             <record name="node_hints" javaclass="com.wm.util.Values">
-              <value name="id">acb6e490-0827-11f1-a806-39a7af0ee02f/acb6e491-0827-11f1-a806-39a7af0ee02f</value>
+              <value name="id">21d9f6d0-0829-11f1-8c6f-b311dc14736c/21d9f6d1-0829-11f1-8c6f-b311dc14736c</value>
             </record>
             <value name="is_public">false</value>
             <value name="field_name">order_id</value>
@@ -247,7 +247,7 @@
             <value name="node_type">unknown</value>
             <value name="node_subtype">unknown</value>
             <record name="node_hints" javaclass="com.wm.util.Values">
-              <value name="id">acb6e490-0827-11f1-a806-39a7af0ee02f/acb6e492-0827-11f1-a806-39a7af0ee02f</value>
+              <value name="id">21d9f6d0-0829-11f1-8c6f-b311dc14736c/21d9f6d2-0829-11f1-8c6f-b311dc14736c</value>
             </record>
             <value name="is_public">false</value>
             <value name="field_name">first_name</value>
@@ -261,7 +261,7 @@
             <value name="node_type">unknown</value>
             <value name="node_subtype">unknown</value>
             <record name="node_hints" javaclass="com.wm.util.Values">
-              <value name="id">acb6e490-0827-11f1-a806-39a7af0ee02f/acb6e493-0827-11f1-a806-39a7af0ee02f</value>
+              <value name="id">21d9f6d0-0829-11f1-8c6f-b311dc14736c/21d9f6d3-0829-11f1-8c6f-b311dc14736c</value>
             </record>
             <value name="is_public">false</value>
             <value name="field_name">last_name</value>
@@ -275,7 +275,7 @@
             <value name="node_type">unknown</value>
             <value name="node_subtype">unknown</value>
             <record name="node_hints" javaclass="com.wm.util.Values">
-              <value name="id">acb6e490-0827-11f1-a806-39a7af0ee02f/acb6e494-0827-11f1-a806-39a7af0ee02f</value>
+              <value name="id">21d9f6d0-0829-11f1-8c6f-b311dc14736c/21d9f6d4-0829-11f1-8c6f-b311dc14736c</value>
             </record>
             <value name="is_public">false</value>
             <value name="field_name">customer</value>
@@ -289,7 +289,7 @@
             <value name="node_type">unknown</value>
             <value name="node_subtype">unknown</value>
             <record name="node_hints" javaclass="com.wm.util.Values">
-              <value name="id">acb6e490-0827-11f1-a806-39a7af0ee02f/acb6e495-0827-11f1-a806-39a7af0ee02f</value>
+              <value name="id">21d9f6d0-0829-11f1-8c6f-b311dc14736c/21d9f6d5-0829-11f1-8c6f-b311dc14736c</value>
             </record>
             <value name="is_public">false</value>
             <value name="field_name">product_name</value>
@@ -303,7 +303,7 @@
             <value name="node_type">unknown</value>
             <value name="node_subtype">unknown</value>
             <record name="node_hints" javaclass="com.wm.util.Values">
-              <value name="id">acb6e490-0827-11f1-a806-39a7af0ee02f/acb6e496-0827-11f1-a806-39a7af0ee02f</value>
+              <value name="id">21d9f6d0-0829-11f1-8c6f-b311dc14736c/21d9f6d6-0829-11f1-8c6f-b311dc14736c</value>
             </record>
             <value name="is_public">false</value>
             <value name="field_name">product_code</value>
@@ -321,13 +321,12 @@
               <value name="field_largerEditor">false</value>
               <value name="field_password">false</value>
               <value name="field_usereditable">false</value>
-              <value name="id">acb6e490-0827-11f1-a806-39a7af0ee02f/acb6e497-0827-11f1-a806-39a7af0ee02f</value>
+              <value name="id">21d9f6d0-0829-11f1-8c6f-b311dc14736c/21d9f6d7-0829-11f1-8c6f-b311dc14736c</value>
             </record>
             <value name="is_public">false</value>
             <value name="field_name">quantity</value>
-            <value name="field_type">object</value>
+            <value name="field_type">string</value>
             <value name="field_dim">0</value>
-            <value name="wrapper_type">java.lang.Integer</value>
             <value name="nillable">true</value>
             <value name="form_qualified">false</value>
             <value name="is_global">false</value>
@@ -336,7 +335,7 @@
             <value name="node_type">unknown</value>
             <value name="node_subtype">unknown</value>
             <record name="node_hints" javaclass="com.wm.util.Values">
-              <value name="id">acb6e490-0827-11f1-a806-39a7af0ee02f/acb6e498-0827-11f1-a806-39a7af0ee02f</value>
+              <value name="id">21d9f6d0-0829-11f1-8c6f-b311dc14736c/21d9f6d8-0829-11f1-8c6f-b311dc14736c</value>
             </record>
             <value name="is_public">false</value>
             <value name="field_name">opt_in</value>
@@ -350,12 +349,24 @@
             <value name="node_type">unknown</value>
             <value name="node_subtype">unknown</value>
             <record name="node_hints" javaclass="com.wm.util.Values">
-              <value name="id">acb6e490-0827-11f1-a806-39a7af0ee02f/acb6e499-0827-11f1-a806-39a7af0ee02f</value>
+              <value name="id">21d9f6d0-0829-11f1-8c6f-b311dc14736c/21d9f6d9-0829-11f1-8c6f-b311dc14736c</value>
             </record>
             <value name="is_public">false</value>
             <value name="field_name">comment</value>
             <value name="field_type">string</value>
             <value name="field_dim">0</value>
+            <value name="nillable">true</value>
+            <value name="form_qualified">false</value>
+            <value name="is_global">false</value>
+          </record>
+          <record javaclass="com.wm.util.Values">
+            <value name="node_type">unknown</value>
+            <value name="node_subtype">unknown</value>
+            <value name="is_public">false</value>
+            <value name="field_name">quantity</value>
+            <value name="field_type">object</value>
+            <value name="field_dim">0</value>
+            <value name="wrapper_type">java.lang.Integer</value>
             <value name="nillable">true</value>
             <value name="form_qualified">false</value>
             <value name="is_global">false</value>
