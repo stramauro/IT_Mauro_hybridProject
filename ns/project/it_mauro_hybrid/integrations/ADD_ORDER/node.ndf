@@ -197,7 +197,7 @@
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
     <value name="lastModifiedBy">Mauro.Stramazzotti@ibm.com</value>
-    <value name="lastModifiedDate">1770914875201</value>
+    <value name="lastModifiedDate">1770915247332</value>
     <value name="displayName">ADD_ORDER</value>
     <value name="description"></value>
     <array name="appList" type="record" depth="1">
@@ -252,36 +252,24 @@
       <record name="/1/0" javaclass="com.wm.util.Values">
         <value name="itemType">SERVICES</value>
         <Boolean name="serviceReferenceResolved">true</Boolean>
-        <record name="serviceInfo" javaclass="com.wm.util.Values">
-          <value name="groupName">math</value>
-          <value name="groupDisplayName">Math</value>
-        </record>
         <record name="serviceName" javaclass="com.wm.util.Values">
-          <value name="transformerSupport">true</value>
           <value name="displayName">toNumber</value>
           <value name="serviceName">pub.math:toNumber</value>
-          <Boolean name="enabled">true</Boolean>
-          <double name="rank" type="Double">0.4</double>
+          <value name="transformerSupport">true</value>
         </record>
-        <null name="outputMapSet"/>
-        <null name="mapSet"/>
+        <array name="mapSet" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
       </record>
       <record name="/1/1" javaclass="com.wm.util.Values">
         <value name="itemType">SERVICES</value>
         <Boolean name="serviceReferenceResolved">true</Boolean>
-        <record name="serviceInfo" javaclass="com.wm.util.Values">
-          <value name="groupName">math</value>
-          <value name="groupDisplayName">Math</value>
-        </record>
         <record name="serviceName" javaclass="com.wm.util.Values">
-          <value name="transformerSupport">true</value>
           <value name="displayName">toNumber</value>
           <value name="serviceName">pub.math:toNumber</value>
-          <Boolean name="enabled">true</Boolean>
-          <double name="rank" type="Double">0.4</double>
+          <value name="transformerSupport">true</value>
         </record>
-        <null name="outputMapSet"/>
-        <null name="mapSet"/>
+        <array name="mapSet" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
       </record>
       <record name="/2" javaclass="com.wm.util.Values">
         <value name="itemType">APPS</value>
@@ -337,6 +325,10 @@
         <null name="outputMapSet"/>
         <value name="nodePathForDebug">2</value>
         <Boolean name="hasBreakPoint">true</Boolean>
+      </record>
+      <record name="/3" javaclass="com.wm.util.Values">
+        <value name="itemType">ALL</value>
+        <value name="name">NEW</value>
       </record>
     </record>
   </record>
