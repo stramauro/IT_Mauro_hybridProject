@@ -197,7 +197,7 @@
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
     <value name="lastModifiedBy">Mauro.Stramazzotti@ibm.com</value>
-    <value name="lastModifiedDate">1770912048085</value>
+    <value name="lastModifiedDate">1770912489625</value>
     <value name="displayName">ADD_ORDER</value>
     <value name="description"></value>
     <array name="appList" type="record" depth="1">
@@ -265,6 +265,8 @@
           <value name="serviceName">pub.math:toNumber</value>
           <value name="transformerSupport">true</value>
         </record>
+      </record>
+      <record name="/1/2" javaclass="com.wm.util.Values">
       </record>
       <record name="/2" javaclass="com.wm.util.Values">
         <value name="itemType">APPS</value>
