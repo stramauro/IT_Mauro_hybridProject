@@ -8,11 +8,6 @@ runtimes:
     uid: fl05849c27b1791bc13fe6d5
     stepId: a3
     reference: project.it_mauro_hybrid.integrations:GET_ORDERS
-  - name: GET SINGLE ORDER
-    type: workflow
-    uid: fl6af187878882b0213ec746
-    stepId: a0
-    reference: project.it_mauro_hybrid.integrations:READ_SINGLE_ORDER
   - name: DELETE ORDER
     type: workflow
     uid: fl51871a85afcbde23ee4f8b
@@ -23,3 +18,8 @@ runtimes:
     uid: fla9247985012a3bc77a0553
     stepId: a4
     reference: project.it_mauro_hybrid.integrations:ADD_ORDER
+  - name: GET SINGLE ORDER
+    type: workflow
+    uid: fl6af187878882b0213ec746
+    stepId: a4
+    reference: project.it_mauro_hybrid.integrations:GET_SINGLE_ORDER
