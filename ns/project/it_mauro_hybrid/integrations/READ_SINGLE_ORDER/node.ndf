@@ -62,9 +62,8 @@
   <value name="retry_max">0</value>
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
-    <value name="createdBy">Mauro.Stramazzotti@ibm.com</value>
-    <value name="createdDate">1768574050526</value>
-    <value name="lastModifiedDate">1768574050526</value>
+    <value name="lastModifiedBy">Mauro.Stramazzotti@ibm.com</value>
+    <value name="lastModifiedDate">1772786677385</value>
     <value name="displayName">READ_SINGLE_ORDER</value>
     <value name="description"></value>
     <array name="appList" type="record" depth="1">
@@ -80,7 +79,7 @@
         <value name="name">Database</value>
         <value name="providerName">WmJDBCAdapter</value>
         <record name="operation" javaclass="com.wm.util.Values">
-          <value name="operationName">READ_SINGLE_ORDER</value>
+          <value name="operationName">test_action</value>
           <value name="isCustom">true</value>
           <value name="operationType">actions</value>
           <value name="connectionType">sagcloud</value>
@@ -115,7 +114,8 @@
         </array>
         <array name="lookupTransformer" type="object" depth="1" javaclass="java.lang.Object">
         </array>
-        <null name="mapSet"/>
+        <array name="mapSet" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
         <array name="inputMap" type="object" depth="1" javaclass="java.lang.Object">
         </array>
         <array name="outputMap" type="object" depth="1" javaclass="java.lang.Object">
@@ -125,6 +125,7 @@
         <number name="nodeIndex" type="Long">0</number>
         <number name="lineNumberForDebug" type="Long">1</number>
         <null name="outputMapSet"/>
+        <value name="nodePathForDebug">0</value>
       </record>
     </record>
   </record>
