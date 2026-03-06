@@ -197,143 +197,23 @@
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
     <value name="lastModifiedBy">Mauro.Stramazzotti@ibm.com</value>
-    <value name="lastModifiedDate">1772786429657</value>
+    <value name="lastModifiedDate">1772787315838</value>
     <value name="displayName">ADD_ORDER</value>
     <value name="description"></value>
-    <array name="appList" type="record" depth="1">
-      <record javaclass="com.wm.util.Values">
-        <value name="providerName">WmJDBCAdapter</value>
-        <value name="id">com.wm.adapter.wmjdbc.JDBCAdapter</value>
-      </record>
-    </array>
     <record name="stepNodeHints" javaclass="com.wm.util.Values">
       <record name="/0" javaclass="com.wm.util.Values">
-        <null name="name"/>
         <value name="itemType">SERVICES</value>
-        <record name="serviceInfo" javaclass="com.wm.util.Values">
-          <value name="groupDisplayName">Date</value>
-          <value name="groupName">date</value>
-          <null name="services"/>
-        </record>
         <record name="serviceName" javaclass="com.wm.util.Values">
-          <value name="transformerSupport">true</value>
           <value name="displayName">getCurrentDate</value>
           <value name="serviceName">pub.date:getCurrentDate</value>
-          <Boolean name="enabled">true</Boolean>
-          <double name="rank" type="Double">0.7</double>
-        </record>
-        <null name="outputMapSet"/>
-        <null name="mapSet"/>
-        <value name="nodePathNew">0</value>
-        <number name="nodeIndex" type="Long">0</number>
-        <number name="lineNumberForDebug" type="Long">1</number>
-        <Boolean name="serviceReferenceResolved">true</Boolean>
-        <number name="ui_step_index" type="Long">1</number>
-        <value name="nodePathForDebug">0</value>
-      </record>
-      <record name="/1" javaclass="com.wm.util.Values">
-        <value name="itemType">CONTROLS</value>
-        <value name="name">TRANSFORM</value>
-        <number name="ui_step_index" type="Long">2</number>
-        <value name="nodePathNew">1</value>
-        <number name="nodeIndex" type="Long">1</number>
-        <number name="lineNumberForDebug" type="Long">2</number>
-        <array name="map" type="object" depth="1" javaclass="java.lang.Object">
-        </array>
-        <array name="mapSet" type="object" depth="1" javaclass="java.lang.Object">
-        </array>
-        <array name="mapDelete" type="object" depth="1" javaclass="java.lang.Object">
-        </array>
-        <array name="transformer" type="object" depth="1" javaclass="java.lang.Object">
-        </array>
-        <array name="lookupTransformer" type="object" depth="1" javaclass="java.lang.Object">
-        </array>
-        <value name="nodePathForDebug">1</value>
-      </record>
-      <record name="/1/0" javaclass="com.wm.util.Values">
-        <value name="itemType">SERVICES</value>
-        <Boolean name="serviceReferenceResolved">true</Boolean>
-        <record name="serviceName" javaclass="com.wm.util.Values">
-          <value name="displayName">toNumber</value>
-          <value name="serviceName">pub.math:toNumber</value>
           <value name="transformerSupport">true</value>
         </record>
-        <array name="mapSet" type="object" depth="1" javaclass="java.lang.Object">
-        </array>
-        <value name="nodePathForDebug">1.0</value>
       </record>
-      <record name="/1/1" javaclass="com.wm.util.Values">
-        <value name="itemType">SERVICES</value>
-        <Boolean name="serviceReferenceResolved">true</Boolean>
-        <record name="serviceName" javaclass="com.wm.util.Values">
-          <value name="displayName">toNumber</value>
-          <value name="serviceName">pub.math:toNumber</value>
-          <value name="transformerSupport">true</value>
-        </record>
-        <array name="mapSet" type="object" depth="1" javaclass="java.lang.Object">
-        </array>
-        <value name="nodePathForDebug">1.1</value>
-      </record>
-      <record name="/2" javaclass="com.wm.util.Values">
-        <value name="itemType">APPS</value>
-        <value name="id">com.wm.adapter.wmjdbc.JDBCAdapter</value>
-        <value name="name">Database</value>
-        <value name="providerName">WmJDBCAdapter</value>
-        <record name="operation" javaclass="com.wm.util.Values">
-          <value name="operationName">ADD_ORDER</value>
-          <value name="description">insert a new order in table</value>
-          <value name="isCustom">true</value>
-          <value name="operationType">actions</value>
-          <value name="projectName">project.it_mauro_hybrid</value>
-        </record>
-        <value name="appType">predefined</value>
-        <Boolean name="hasAccount">true</Boolean>
-        <Boolean name="allowCustomOperations">true</Boolean>
-        <value name="allowDeleteApplication">false</value>
-        <value name="allowUpdateApplication">false</value>
-        <null name="certified"/>
-        <Boolean name="deprecated">false</Boolean>
-        <value name="description">Database Application enables you to perform database operation</value>
-        <null name="icon"/>
-        <value name="packageName">WmJDBCAdapter</value>
-        <value name="type">Adapters</value>
-        <value name="version">1.0</value>
-        <Boolean name="serviceReferenceResolved">true</Boolean>
-        <array name="map" type="object" depth="1" javaclass="java.lang.Object">
-        </array>
-        <array name="mapDelete" type="object" depth="1" javaclass="java.lang.Object">
-        </array>
-        <array name="transformer" type="object" depth="1" javaclass="java.lang.Object">
-        </array>
-        <array name="lookupTransformer" type="object" depth="1" javaclass="java.lang.Object">
-        </array>
-        <array name="mapSet" type="object" depth="1" javaclass="java.lang.Object">
-        </array>
-        <array name="inputMap" type="object" depth="1" javaclass="java.lang.Object">
-        </array>
-        <array name="outputMap" type="object" depth="1" javaclass="java.lang.Object">
-        </array>
-        <record name="connection" javaclass="com.wm.util.Values">
-          <value name="connectionName">PostgreSQL_Mauro</value>
-          <value name="connectionType">IBM webMethods Adapter for JDBC ExtendedConnection</value>
-          <null name="description"/>
-        </record>
-        <value name="connectionNSName">project.it_mauro_hybrid.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:PostgreSQL_Mauro</value>
-        <value name="connectionType">IBM webMethods Adapter for JDBC ExtendedConnection</value>
-        <Boolean name="accountReferenceResolved">true</Boolean>
-        <number name="ui_step_index" type="Long">3</number>
-        <value name="nodePathNew">2</value>
-        <number name="nodeIndex" type="Long">2</number>
-        <number name="lineNumberForDebug" type="Long">3</number>
-        <Boolean name="xmlMapsetSupported">true</Boolean>
-        <null name="outputMapSet"/>
-        <value name="nodePathForDebug">2</value>
-      </record>
-      <record name="/3" javaclass="com.wm.util.Values">
-        <value name="itemType">ALL</value>
-        <value name="name">NEW</value>
-        <value name="nodePathForDebug">3</value>
-      </record>
+      <null name="/1"/>
+      <null name="/1/0"/>
+      <null name="/1/1"/>
+      <null name="/2"/>
+      <null name="/3"/>
     </record>
   </record>
   <value name="svc_in_validator_options">none</value>
