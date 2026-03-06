@@ -124,7 +124,7 @@
 <MAPCOPY FROM="/ORDER_ID;1;0" TO="/DELETE_ORDERInput;2;0/order_id_1;1;0">
 </MAPCOPY>
 
-<MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" GLOBALVARIABLES="false" FIELD="/$connectionName;1;0">
+<MAPSET NAME="Setter" OVERWRITE="false" VARIABLES="false" GLOBALVARIABLES="false" FIELD="/$connectionName;1;0">
   <DATA ENCODING="XMLValues" I18N="true">
 
 <Values version="2.0">
