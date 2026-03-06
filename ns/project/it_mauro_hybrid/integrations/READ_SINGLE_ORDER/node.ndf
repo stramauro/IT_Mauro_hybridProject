@@ -63,7 +63,7 @@
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
     <value name="lastModifiedBy">Mauro.Stramazzotti@ibm.com</value>
-    <value name="lastModifiedDate">1772786677385</value>
+    <value name="lastModifiedDate">1772786738803</value>
     <value name="displayName">READ_SINGLE_ORDER</value>
     <value name="description"></value>
     <array name="appList" type="record" depth="1">
@@ -79,10 +79,10 @@
         <value name="name">Database</value>
         <value name="providerName">WmJDBCAdapter</value>
         <record name="operation" javaclass="com.wm.util.Values">
-          <value name="operationName">test_action</value>
+          <value name="operationName">READ_SINGLE_ORDER</value>
+          <value name="description">get single order from orders table by orderid</value>
           <value name="isCustom">true</value>
           <value name="operationType">actions</value>
-          <value name="connectionType">sagcloud</value>
           <value name="projectName">project.it_mauro_hybrid</value>
         </record>
         <value name="appType">predefined</value>
@@ -99,11 +99,11 @@
         <value name="version">1.0</value>
         <record name="connection" javaclass="com.wm.util.Values">
           <value name="connectionName">PostgreSQL_Mauro</value>
-          <value name="connectionType">sagcloud</value>
+          <value name="connectionType">IBM webMethods Adapter for JDBC ExtendedConnection</value>
           <null name="description"/>
         </record>
         <value name="connectionNSName">project.it_mauro_hybrid.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:PostgreSQL_Mauro</value>
-        <value name="connectionType">sagcloud</value>
+        <value name="connectionType">IBM webMethods Adapter for JDBC ExtendedConnection</value>
         <Boolean name="accountReferenceResolved">true</Boolean>
         <Boolean name="serviceReferenceResolved">true</Boolean>
         <array name="map" type="object" depth="1" javaclass="java.lang.Object">
