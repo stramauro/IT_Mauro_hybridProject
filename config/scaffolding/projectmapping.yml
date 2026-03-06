@@ -1,0 +1,25 @@
+version: "1.0"
+projectName: IT_Mauro_hybridProject
+runtimes:
+- runtimeAlias: IT_MS_ERT_hybrid
+  assets:
+  - name: GET_ORDERS
+    type: workflow
+    uid: fl05849c27b1791bc13fe6d5
+    stepId: a3
+    reference: project.it_mauro_hybrid.integrations:GET_ORDERS
+  - name: GET SINGLE ORDER
+    type: workflow
+    uid: fl6af187878882b0213ec746
+    stepId: a0
+    reference: project.it_mauro_hybrid.integrations:READ_SINGLE_ORDER
+  - name: DELETE ORDER
+    type: workflow
+    uid: fl51871a85afcbde23ee4f8b
+    stepId: a4
+    reference: project.it_mauro_hybrid.integrations:DELETE_ORDER
+  - name: INSERT NEW ORDER
+    type: workflow
+    uid: fla9247985012a3bc77a0553
+    stepId: a4
+    reference: project.it_mauro_hybrid.integrations:ADD_ORDER
