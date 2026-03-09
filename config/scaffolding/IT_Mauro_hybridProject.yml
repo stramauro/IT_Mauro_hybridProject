@@ -100,7 +100,7 @@ services:
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
-- serviceName: pub.json:documentToJSONString
+- serviceName: pub.date:getCurrentDate
   packages:
   - name: WmPublic
     version: 11.1.0.0.2105
@@ -128,7 +128,11 @@ services:
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
-- serviceName: project.it_mauro_hybrid.integrations:READ_SINGLE_ORDER
+- serviceName: pub.json:documentToJSONString
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.2105
+- serviceName: project.it_mauro_hybrid.integrations:GET_SINGLE_ORDER
   packages:
   - name: IT_Mauro_hybridProject
     version: "1.0"
@@ -140,10 +144,6 @@ services:
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
-- serviceName: pub.date:getCurrentDate
-  packages:
-  - name: WmPublic
-    version: 11.1.0.0.2105
 - serviceName: project.it_mauro_hybrid.integrations:read_transactions_frauds
   packages:
   - name: IT_Mauro_hybridProject
