@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <record name="record" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="node_subtype">unknown</value>
+    <value name="node_nsName">project.it_mauro_hybrid.documenttypes:IT_MS_Order_doc</value>
+    <value name="node_pkg">IT_Mauro_hybridProject</value>
+    <record name="node_hints" javaclass="com.wm.util.Values">
+      <record name="revisionData" javaclass="com.wm.util.Values">
+        <value name="createdBy">Mauro.Stramazzotti@ibm.com</value>
+        <value name="createdByUserId">3cc5a89dd59843d28edac366818ebe4f</value>
+        <number name="createdDate" type="Long">1776421432110</number>
+        <value name="lastModifiedBy">Mauro.Stramazzotti@ibm.com</value>
+        <value name="lastModifiedByUserId">3cc5a89dd59843d28edac366818ebe4f</value>
+        <number name="lastModifiedDate" type="Long">1776421432110</number>
+      </record>
+      <Boolean name="wMIODocTypeReplica">true</Boolean>
+    </record>
+    <value name="is_public">false</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+    </array>
+    <value name="modifiable">true</value>
+  </record>
+</Values>
