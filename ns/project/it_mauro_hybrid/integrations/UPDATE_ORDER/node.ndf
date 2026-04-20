@@ -45,7 +45,7 @@
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
     <value name="lastModifiedBy">Mauro.Stramazzotti@ibm.com</value>
-    <value name="lastModifiedDate">1776676014983</value>
+    <value name="lastModifiedDate">1776676124246</value>
     <value name="displayName">UPDATE_ORDER</value>
     <value name="description"></value>
     <array name="appList" type="record" depth="1">
@@ -90,12 +90,12 @@
           <value name="transformerSupport">true</value>
         </record>
         <Boolean name="serviceReferenceResolved">true</Boolean>
+        <record name="serviceInfo" javaclass="com.wm.util.Values">
+          <value name="groupName">math</value>
+          <value name="groupDisplayName">Math</value>
+        </record>
       </record>
       <record name="/0/2" javaclass="com.wm.util.Values">
-      </record>
-      <record name="/0/3" javaclass="com.wm.util.Values">
-      </record>
-      <record name="/0/4" javaclass="com.wm.util.Values">
       </record>
       <record name="/1" javaclass="com.wm.util.Values">
         <value name="name">Database</value>
