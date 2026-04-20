@@ -45,7 +45,7 @@
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
     <value name="lastModifiedBy">Mauro.Stramazzotti@ibm.com</value>
-    <value name="lastModifiedDate">1776676124246</value>
+    <value name="lastModifiedDate">1776676169551</value>
     <value name="displayName">UPDATE_ORDER</value>
     <value name="description"></value>
     <array name="appList" type="record" depth="1">
@@ -72,6 +72,7 @@
         </array>
         <array name="lookupTransformer" type="object" depth="1" javaclass="java.lang.Object">
         </array>
+        <value name="nodePathForDebug">0</value>
       </record>
       <record name="/0/0" javaclass="com.wm.util.Values">
         <value name="itemType">SERVICES</value>
@@ -81,6 +82,8 @@
           <value name="transformerSupport">true</value>
         </record>
         <Boolean name="serviceReferenceResolved">true</Boolean>
+        <array name="mapSet" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
       </record>
       <record name="/0/1" javaclass="com.wm.util.Values">
         <value name="itemType">SERVICES</value>
@@ -90,10 +93,8 @@
           <value name="transformerSupport">true</value>
         </record>
         <Boolean name="serviceReferenceResolved">true</Boolean>
-        <record name="serviceInfo" javaclass="com.wm.util.Values">
-          <value name="groupName">math</value>
-          <value name="groupDisplayName">Math</value>
-        </record>
+        <array name="mapSet" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
       </record>
       <record name="/0/2" javaclass="com.wm.util.Values">
       </record>
@@ -149,7 +150,7 @@
         <number name="lineNumberForDebug" type="Long">2</number>
         <Boolean name="xmlMapsetSupported">true</Boolean>
         <null name="outputMapSet"/>
-        <value name="nodePathForDebug">0</value>
+        <value name="nodePathForDebug">1</value>
       </record>
     </record>
   </record>
