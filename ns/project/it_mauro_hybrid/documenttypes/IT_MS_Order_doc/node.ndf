@@ -13,7 +13,7 @@
         <number name="createdDate" type="Long">1776421432110</number>
         <value name="lastModifiedBy">Mauro.Stramazzotti@ibm.com</value>
         <value name="lastModifiedByUserId">3cc5a89dd59843d28edac366818ebe4f</value>
-        <number name="lastModifiedDate" type="Long">1776672981834</number>
+        <number name="lastModifiedDate" type="Long">1776678074486</number>
       </record>
       <Boolean name="wMIODocTypeReplica">true</Boolean>
     </record>
@@ -154,6 +154,23 @@
         </record>
         <value name="is_public">false</value>
         <value name="field_name">quantity</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">field</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+          <value name="field_usereditable">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">comment</value>
         <value name="field_type">string</value>
         <value name="field_dim">0</value>
         <value name="nillable">true</value>
