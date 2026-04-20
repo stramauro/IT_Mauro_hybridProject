@@ -46,7 +46,7 @@
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
     <value name="lastModifiedBy">Mauro.Stramazzotti@ibm.com</value>
-    <value name="lastModifiedDate">1768572416585</value>
+    <value name="lastModifiedDate">1776674893811</value>
     <value name="displayName">GET_ORDERS</value>
     <value name="description"></value>
     <array name="appList" type="record" depth="1">
@@ -82,11 +82,11 @@
         <value name="version">1.0</value>
         <record name="connection" javaclass="com.wm.util.Values">
           <value name="connectionName">PostgreSQL_Mauro</value>
-          <value name="connectionType">sagcloud</value>
+          <value name="connectionType">IBM webMethods Adapter for JDBC ExtendedConnection</value>
           <null name="description"/>
         </record>
         <value name="connectionNSName">project.it_mauro_hybrid.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:PostgreSQL_Mauro</value>
-        <value name="connectionType">sagcloud</value>
+        <value name="connectionType">IBM webMethods Adapter for JDBC ExtendedConnection</value>
         <Boolean name="accountReferenceResolved">true</Boolean>
         <Boolean name="serviceReferenceResolved">true</Boolean>
         <array name="map" type="object" depth="1" javaclass="java.lang.Object">
@@ -103,10 +103,10 @@
         </array>
         <array name="outputMap" type="object" depth="1" javaclass="java.lang.Object">
         </array>
-        <value name="nodePathForDebug">0</value>
         <value name="nodePathNew">0</value>
         <number name="nodeIndex" type="Long">0</number>
         <number name="lineNumberForDebug" type="Long">1</number>
+        <value name="nodePathForDebug">0</value>
       </record>
       <record name="/1" javaclass="com.wm.util.Values">
         <null name="name"/>
@@ -129,6 +129,8 @@
         <value name="nodePathNew">1</value>
         <number name="nodeIndex" type="Long">1</number>
         <number name="lineNumberForDebug" type="Long">2</number>
+        <Boolean name="serviceReferenceResolved">true</Boolean>
+        <value name="nodePathForDebug">1</value>
       </record>
     </record>
   </record>
