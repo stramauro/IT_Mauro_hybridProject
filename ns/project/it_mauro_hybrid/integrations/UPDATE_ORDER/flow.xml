@@ -364,12 +364,6 @@
 </MAPCOPY>
 
 <MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" GLOBALVARIABLES="false" FIELD="/convertAs;1;0">
-  <DATA ENCODING="XMLValues" I18N="true">
-
-<Values version="2.0">
-  <value name="xml">java.lang.Integer</value>
-</Values>
-</DATA>
 </MAPSET>
 </MAP>
 
@@ -394,12 +388,6 @@
 </MAPCOPY>
 
 <MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" GLOBALVARIABLES="false" FIELD="/convertAs;1;0">
-  <DATA ENCODING="XMLValues" I18N="true">
-
-<Values version="2.0">
-  <value name="xml">java.lang.Integer</value>
-</Values>
-</DATA>
 </MAPSET>
 </MAP>
 
@@ -787,13 +775,13 @@
 <MAPCOPY FROM="/product_code;1;0" TO="/UPDATE_ORDERInput;2;0/product_code;1;0">
 </MAPCOPY>
 
-<MAPCOPY FROM="/quantity(1);3.6;0" TO="/UPDATE_ORDERInput;2;0/quantity;3.6;0">
-</MAPCOPY>
-
 <MAPCOPY FROM="/opt_in;1;0" TO="/UPDATE_ORDERInput;2;0/opt_in;1;0">
 </MAPCOPY>
 
 <MAPCOPY FROM="/orderID;3.6;0" TO="/UPDATE_ORDERInput;2;0/order_id_1;3.6;0">
+</MAPCOPY>
+
+<MAPCOPY FROM="/quantity(1);3.6;0" TO="/UPDATE_ORDERInput;2;0/quantity;3.6;0">
 </MAPCOPY>
 
 <MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" GLOBALVARIABLES="false" FIELD="/$connectionAlias;1;0">
