@@ -23,3 +23,8 @@ runtimes:
     uid: fl6af187878882b0213ec746
     stepId: a4
     reference: project.it_mauro_hybrid.integrations:GET_SINGLE_ORDER
+  - name: UPDATE ORDER
+    type: workflow
+    uid: fl134900dfe48a4848966f9f97646cbc14
+    stepId: a3
+    reference: project.it_mauro_hybrid.integrations:GET_ORDERS
