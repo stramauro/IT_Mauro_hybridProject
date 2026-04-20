@@ -387,6 +387,12 @@
 </MAPCOPY>
 
 <MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" GLOBALVARIABLES="false" FIELD="/convertAs;1;0">
+  <DATA ENCODING="XMLValues" I18N="true">
+
+<Values version="2.0">
+  <value name="xml">java.lang.Integer</value>
+</Values>
+</DATA>
 </MAPSET>
 </MAP>
 
@@ -411,6 +417,12 @@
 </MAPCOPY>
 
 <MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" GLOBALVARIABLES="false" FIELD="/convertAs;1;0">
+  <DATA ENCODING="XMLValues" I18N="true">
+
+<Values version="2.0">
+  <value name="xml">java.lang.Integer</value>
+</Values>
+</DATA>
 </MAPSET>
 </MAP>
 
