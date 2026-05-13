@@ -197,7 +197,7 @@
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
     <value name="lastModifiedBy">Mauro.Stramazzotti@ibm.com</value>
-    <value name="lastModifiedDate">1778704487004</value>
+    <value name="lastModifiedDate">1778704521087</value>
     <value name="displayName">ADD_ORDER</value>
     <value name="description"></value>
     <array name="appList" type="record" depth="1">
@@ -266,6 +266,7 @@
         <value name="nodePathNew">3</value>
         <number name="nodeIndex" type="Long">3</number>
         <number name="lineNumberForDebug" type="Long">4</number>
+        <number name="ui_step_index" type="Long">4</number>
       </record>
       <record name="/4" javaclass="com.wm.util.Values">
         <value name="name">IBM MQ</value>
@@ -312,12 +313,16 @@
         </array>
         <array name="lookupTransformer" type="object" depth="1" javaclass="java.lang.Object">
         </array>
-        <array name="mapSet" type="object" depth="1" javaclass="java.lang.Object">
-        </array>
+        <null name="mapSet"/>
         <array name="inputMap" type="object" depth="1" javaclass="java.lang.Object">
         </array>
         <array name="outputMap" type="object" depth="1" javaclass="java.lang.Object">
         </array>
+        <value name="nodePathNew">4</value>
+        <number name="nodeIndex" type="Long">4</number>
+        <number name="lineNumberForDebug" type="Long">5</number>
+        <Boolean name="xmlMapsetSupported">true</Boolean>
+        <null name="outputMapSet"/>
       </record>
     </record>
   </record>
