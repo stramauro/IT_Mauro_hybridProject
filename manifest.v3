@@ -11,17 +11,18 @@
   <record name="requires" javaclass="com.wm.util.Values">
     <value name="WmKafkaAdapter">9.6.0.0.26</value>
     <value name="WmJDBCAdapter">10.3.0.0.34</value>
+    <value name="WmMQAdapter">6.5.0.0.19</value>
   </record>
   <null name="listACL"/>
   <value name="webappLoad">yes</value>
   <value name="reloadWithDependentPackage">yes</value>
-  <value name="build">260</value>
+  <value name="build">261</value>
   <null name="description"/>
   <value name="created_date">15-12-2025 10:45:21 GMT</value>
   <null name="extendedProperties"/>
   <null name="target_server_version"/>
   <value name="isProjectPackage">true</value>
-  <value name="lastUpdated">2026-05-11T08:37:57.194028467Z</value>
+  <value name="lastUpdated">2026-05-13T15:42:17.143494956Z</value>
   <value name="wmProjectId">fla12c7a6a7738b285dd1ce1</value>
   <value name="creator">Mauro Stramazzotti</value>
   <value name="lazy_load">yes</value>

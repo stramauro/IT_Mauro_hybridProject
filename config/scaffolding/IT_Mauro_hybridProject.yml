@@ -15,6 +15,10 @@ packages:
   version: 10.3.0.0.34
   wpmServer: https://packages.webmethods.io
   wpmRegistry: licensed
+- name: WmMQAdapter
+  wpmServer: https://packages.webmethods.io
+  wpmRegistry: licensed
+  wpmVersion: latest
 services:
 - serviceName: project.it_mauro_hybrid.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:PostgreSQL_Mauro
   packages:
@@ -163,46 +167,24 @@ configurationVariables:
   : ""
   ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.PostgreSQL_Mauro.connectionManagerSettings.startupBackoffSecs
   : "10"
-  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmKafkaAdapter.com_wm_adapter_wmkafka_KafkaAdapter.connections.ApacheKafka_Mauro.connectionManagerSettings.minimumPoolSize
-  : "1"
-  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmKafkaAdapter.com_wm_adapter_wmkafka_KafkaAdapter.connections.ApacheKafka_Mauro.connectionSettings.autoCommitInterval
-  : "5000"
-  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmKafkaAdapter.com_wm_adapter_wmkafka_KafkaAdapter.connections.ApacheKafka_Mauro.connectionSettings.valueDeserializer
-  : com.wm.adapter.wmkafka.idata.IDataDeserializer
-  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.PostgreSQL_Mauro.connectionSettings.driverType
-  : postgresql_jdbc
-  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmKafkaAdapter.com_wm_adapter_wmkafka_KafkaAdapter.connections.ApacheKafka_Mauro.connectionSettings.keyDeserializer
-  : com.wm.adapter.wmkafka.idata.IDataDeserializer
-  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.PostgreSQL_Mauro.connectionSettings.keyStore
-  : ""
-  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.PostgreSQL_Mauro.connectionManagerSettings.blockingTimeout
-  : "1000"
-  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmKafkaAdapter.com_wm_adapter_wmkafka_KafkaAdapter.connections.ApacheKafka_Mauro.connectionManagerSettings.blockingTimeout
-  : "1000"
-  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmKafkaAdapter.com_wm_adapter_wmkafka_KafkaAdapter.connections.ApacheKafka_Mauro.connectionSettings.groupId
-  : IWHI
-  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.PostgreSQL_Mauro.connectionManagerSettings.heartBeatInterval
-  : "0"
-  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.PostgreSQL_Mauro.connectionSettings.portNumber
-  : "5432"
-  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmKafkaAdapter.com_wm_adapter_wmkafka_KafkaAdapter.connections.ApacheKafka_Mauro.connectionManagerSettings.poolable
-  : "false"
-  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmKafkaAdapter.com_wm_adapter_wmkafka_KafkaAdapter.connections.ApacheKafka_Mauro.connectionManagerSettings.expireTimeout
-  : "1000"
-  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmKafkaAdapter.com_wm_adapter_wmkafka_KafkaAdapter.connections.ApacheKafka_Mauro.connectionManagerSettings.poolIncrementSize
-  : "1"
-  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmKafkaAdapter.com_wm_adapter_wmkafka_KafkaAdapter.connections.ApacheKafka_Mauro.connectionSettings.deserializerErrorHandler
-  : ""
-  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmKafkaAdapter.com_wm_adapter_wmkafka_KafkaAdapter.connections.ApacheKafka_Mauro.connectionSettings.serverList
-  : apache-broker:9092
   ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.PostgreSQL_Mauro.connectionSettings.transactionType
   : NO_TRANSACTION
+  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmKafkaAdapter.com_wm_adapter_wmkafka_KafkaAdapter.connections.ApacheKafka_Mauro.connectionManagerSettings.minimumPoolSize
+  : "1"
   ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.PostgreSQL_Mauro.connectionManagerSettings.maximumPoolSize
   : "10"
   ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.PostgreSQL_Mauro.connectionSettings.user
   : postgres
+  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmKafkaAdapter.com_wm_adapter_wmkafka_KafkaAdapter.connections.ApacheKafka_Mauro.connectionSettings.autoCommitInterval
+  : "5000"
+  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmKafkaAdapter.com_wm_adapter_wmkafka_KafkaAdapter.connections.ApacheKafka_Mauro.connectionSettings.valueDeserializer
+  : com.wm.adapter.wmkafka.idata.IDataDeserializer
   ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.PostgreSQL_Mauro.connectionSettings.datasourceClass
   : org.postgresql.ds.PGSimpleDataSource
+  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.PostgreSQL_Mauro.connectionSettings.driverType
+  : postgresql_jdbc
+  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmKafkaAdapter.com_wm_adapter_wmkafka_KafkaAdapter.connections.ApacheKafka_Mauro.connectionSettings.keyDeserializer
+  : com.wm.adapter.wmkafka.idata.IDataDeserializer
   ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.PostgreSQL_Mauro.connectionSettings.serverName
   : postgres-cdc
   ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmKafkaAdapter.com_wm_adapter_wmkafka_KafkaAdapter.connections.ApacheKafka_Mauro.connectionSettings.seesionTimeOut
@@ -217,24 +199,44 @@ configurationVariables:
   : ""
   ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmKafkaAdapter.com_wm_adapter_wmkafka_KafkaAdapter.connections.ApacheKafka_Mauro.connectionSettings.autoOffsetReset
   : earliest
+  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.PostgreSQL_Mauro.connectionSettings.keyStore
+  : ""
+  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.PostgreSQL_Mauro.connectionManagerSettings.blockingTimeout
+  : "1000"
   ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.PostgreSQL_Mauro.connectionManagerSettings.expireTimeout
   : "1000"
+  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmKafkaAdapter.com_wm_adapter_wmkafka_KafkaAdapter.connections.ApacheKafka_Mauro.connectionManagerSettings.blockingTimeout
+  : "1000"
+  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmKafkaAdapter.com_wm_adapter_wmkafka_KafkaAdapter.connections.ApacheKafka_Mauro.connectionSettings.groupId
+  : IWHI
   ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmKafkaAdapter.com_wm_adapter_wmkafka_KafkaAdapter.connections.ApacheKafka_Mauro.connectionEnabled
   : "false"
+  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.PostgreSQL_Mauro.connectionManagerSettings.heartBeatInterval
+  : "0"
   ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.PostgreSQL_Mauro.connectionSettings.networkProtocol
   : ""
   ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.PostgreSQL_Mauro.connectionManagerSettings.minimumPoolSize
   : "1"
   ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmKafkaAdapter.com_wm_adapter_wmkafka_KafkaAdapter.connections.ApacheKafka_Mauro.connectionManagerSettings.maximumPoolSize
   : "10"
+  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.PostgreSQL_Mauro.connectionSettings.portNumber
+  : "5432"
+  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmKafkaAdapter.com_wm_adapter_wmkafka_KafkaAdapter.connections.ApacheKafka_Mauro.connectionManagerSettings.poolable
+  : "false"
   ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.PostgreSQL_Mauro.connectionManagerSettings.poolIncrementSize
   : "1"
   ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.PostgreSQL_Mauro.connectionSettings.password
   : "{AES}nlfklC+ChDfb+fblHqUafA=="
+  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmKafkaAdapter.com_wm_adapter_wmkafka_KafkaAdapter.connections.ApacheKafka_Mauro.connectionManagerSettings.expireTimeout
+  : "1000"
+  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmKafkaAdapter.com_wm_adapter_wmkafka_KafkaAdapter.connections.ApacheKafka_Mauro.connectionManagerSettings.poolIncrementSize
+  : "1"
   ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmKafkaAdapter.com_wm_adapter_wmkafka_KafkaAdapter.connections.ApacheKafka_Mauro.connectionSettings.kafkaVersion
   : v11+
   ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.PostgreSQL_Mauro.connectionSettings.databaseName
   : demo_db
+  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmKafkaAdapter.com_wm_adapter_wmkafka_KafkaAdapter.connections.ApacheKafka_Mauro.connectionSettings.deserializerErrorHandler
+  : ""
   ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.PostgreSQL_Mauro.connectionSettings.dbType
   : POSTGRESQL
   ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmKafkaAdapter.com_wm_adapter_wmkafka_KafkaAdapter.connections.ApacheKafka_Mauro.connectionSettings.enableAutoCommit
@@ -243,5 +245,7 @@ configurationVariables:
   : "false"
   ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.PostgreSQL_Mauro.connectionEnabled
   : "false"
+  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmKafkaAdapter.com_wm_adapter_wmkafka_KafkaAdapter.connections.ApacheKafka_Mauro.connectionSettings.serverList
+  : apache-broker:9092
   ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmKafkaAdapter.com_wm_adapter_wmkafka_KafkaAdapter.connections.ApacheKafka_Mauro.connectionSettings.otherProperties
   : ""
