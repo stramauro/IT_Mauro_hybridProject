@@ -197,7 +197,7 @@
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
     <value name="lastModifiedBy">Mauro.Stramazzotti@ibm.com</value>
-    <value name="lastModifiedDate">1778704083780</value>
+    <value name="lastModifiedDate">1778704147165</value>
     <value name="displayName">ADD_ORDER</value>
     <value name="description"></value>
     <array name="appList" type="record" depth="1">
@@ -218,9 +218,6 @@
           <value name="serviceName">pub.date:getCurrentDate</value>
           <value name="transformerSupport">true</value>
         </record>
-        <value name="nodePathNew">0</value>
-        <number name="nodeIndex" type="Long">0</number>
-        <number name="lineNumberForDebug" type="Long">1</number>
       </record>
       <null name="/1"/>
       <null name="/1/0"/>
@@ -244,39 +241,14 @@
         <Boolean name="allowCustomOperations">true</Boolean>
         <value name="appType">predefined</value>
         <Boolean name="hasAccount">true</Boolean>
-        <record name="connection" javaclass="com.wm.util.Values">
-          <value name="connectionName">PostgreSQL_Mauro</value>
-          <value name="connectionType">IBM webMethods Adapter for JDBC ExtendedConnection</value>
-          <null name="description"/>
-        </record>
-        <value name="connectionNSName">PostgreSQL_Mauro</value>
-        <value name="connectionType">IBM webMethods Adapter for JDBC ExtendedConnection</value>
-        <Boolean name="accountReferenceResolved">true</Boolean>
-        <number name="ui_step_index" type="Long">3</number>
-        <value name="nodePathNew">2</value>
-        <number name="nodeIndex" type="Long">2</number>
-        <number name="lineNumberForDebug" type="Long">3</number>
-        <Boolean name="xmlMapsetSupported">true</Boolean>
       </record>
       <record name="/3" javaclass="com.wm.util.Values">
-        <null name="name"/>
         <value name="itemType">SERVICES</value>
-        <record name="serviceInfo" javaclass="com.wm.util.Values">
-          <value name="groupDisplayName">String</value>
-          <value name="groupName">string</value>
-          <null name="services"/>
-        </record>
         <record name="serviceName" javaclass="com.wm.util.Values">
           <value name="displayName">bytesToString</value>
           <value name="serviceName">pub.string:bytesToString</value>
           <value name="transformerSupport">true</value>
         </record>
-        <number name="ui_step_index" type="Long">4</number>
-        <value name="nodePathNew">3</value>
-        <number name="nodeIndex" type="Long">3</number>
-        <number name="lineNumberForDebug" type="Long">4</number>
-        <null name="mapSet"/>
-        <null name="outputMapSet"/>
       </record>
       <record name="/4" javaclass="com.wm.util.Values">
         <value name="name">IBM MQ</value>
@@ -313,7 +285,6 @@
         <Boolean name="latest">true</Boolean>
         <Boolean name="allowDeleteApplication">false</Boolean>
         <Boolean name="allowUpdateApplication">false</Boolean>
-        <Boolean name="accountReferenceResolved">true</Boolean>
         <Boolean name="serviceReferenceResolved">true</Boolean>
         <array name="map" type="object" depth="1" javaclass="java.lang.Object">
         </array>
@@ -323,16 +294,13 @@
         </array>
         <array name="lookupTransformer" type="object" depth="1" javaclass="java.lang.Object">
         </array>
-        <null name="mapSet"/>
+        <array name="mapSet" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
         <array name="inputMap" type="object" depth="1" javaclass="java.lang.Object">
         </array>
         <array name="outputMap" type="object" depth="1" javaclass="java.lang.Object">
         </array>
-        <value name="nodePathNew">4</value>
-        <number name="nodeIndex" type="Long">4</number>
-        <number name="lineNumberForDebug" type="Long">5</number>
-        <Boolean name="xmlMapsetSupported">true</Boolean>
-        <null name="outputMapSet"/>
+        <Boolean name="accountReferenceResolved">true</Boolean>
       </record>
     </record>
   </record>
