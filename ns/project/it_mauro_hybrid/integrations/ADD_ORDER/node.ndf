@@ -197,7 +197,7 @@
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
     <value name="lastModifiedBy">Mauro.Stramazzotti@ibm.com</value>
-    <value name="lastModifiedDate">1778702443400</value>
+    <value name="lastModifiedDate">1778702519612</value>
     <value name="displayName">ADD_ORDER</value>
     <value name="description"></value>
     <array name="appList" type="record" depth="1">
@@ -337,9 +337,9 @@
         <value name="itemType">APPS</value>
         <record name="operation" javaclass="com.wm.util.Values">
           <value name="operationName">writeQueue</value>
+          <null name="description"/>
           <value name="isCustom">true</value>
           <value name="operationType">actions</value>
-          <value name="connectionType">sagcloud</value>
           <value name="projectName">project.it_mauro_hybrid</value>
         </record>
         <value name="id">com.wm.adapter.wmmqadapter.wmMQAdapter</value>
@@ -367,7 +367,6 @@
         <Boolean name="latest">true</Boolean>
         <Boolean name="allowDeleteApplication">false</Boolean>
         <Boolean name="allowUpdateApplication">false</Boolean>
-        <Boolean name="accountReferenceResolved">true</Boolean>
         <Boolean name="serviceReferenceResolved">true</Boolean>
         <array name="map" type="object" depth="1" javaclass="java.lang.Object">
         </array>
@@ -382,6 +381,7 @@
         </array>
         <array name="outputMap" type="object" depth="1" javaclass="java.lang.Object">
         </array>
+        <Boolean name="accountReferenceResolved">true</Boolean>
         <number name="ui_step_index" type="Long">4</number>
         <value name="nodePathNew">3</value>
         <number name="nodeIndex" type="Long">3</number>
