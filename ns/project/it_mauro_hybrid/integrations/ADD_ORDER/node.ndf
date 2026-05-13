@@ -197,13 +197,17 @@
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
     <value name="lastModifiedBy">Mauro.Stramazzotti@ibm.com</value>
-    <value name="lastModifiedDate">1773052403672</value>
+    <value name="lastModifiedDate">1778702443400</value>
     <value name="displayName">ADD_ORDER</value>
     <value name="description"></value>
     <array name="appList" type="record" depth="1">
       <record javaclass="com.wm.util.Values">
         <value name="providerName">WmJDBCAdapter</value>
         <value name="id">com.wm.adapter.wmjdbc.JDBCAdapter</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="providerName">WmMQAdapter</value>
+        <value name="id">com.wm.adapter.wmmqadapter.wmMQAdapter</value>
       </record>
     </array>
     <record name="stepNodeHints" javaclass="com.wm.util.Values">
@@ -329,9 +333,61 @@
         <value name="nodePathForDebug">2</value>
       </record>
       <record name="/3" javaclass="com.wm.util.Values">
-        <value name="itemType">ALL</value>
-        <value name="name">NEW</value>
-        <value name="nodePathForDebug">3</value>
+        <value name="name">IBM MQ</value>
+        <value name="itemType">APPS</value>
+        <record name="operation" javaclass="com.wm.util.Values">
+          <value name="operationName">writeQueue</value>
+          <value name="isCustom">true</value>
+          <value name="operationType">actions</value>
+          <value name="connectionType">sagcloud</value>
+          <value name="projectName">project.it_mauro_hybrid</value>
+        </record>
+        <value name="id">com.wm.adapter.wmmqadapter.wmMQAdapter</value>
+        <value name="providerName">WmMQAdapter</value>
+        <value name="allowCustomOperations">true</value>
+        <value name="appType">predefined</value>
+        <Boolean name="hasAccount">true</Boolean>
+        <record name="connection" javaclass="com.wm.util.Values">
+          <value name="connectionName">IBMMQ_Mauro_local</value>
+          <value name="connectionType">IBM webMethods Adapter for MQ Connection</value>
+          <null name="description"/>
+        </record>
+        <value name="connectionNSName">project.it_mauro_hybrid.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections:IBMMQ_Mauro_local</value>
+        <value name="connectionType">IBM webMethods Adapter for MQ Connection</value>
+        <value name="type">Adapters</value>
+        <value name="version">1.0</value>
+        <value name="packageName">WmMQAdapter</value>
+        <value name="description">IBM MQ connector enables you to send and receive data from IBM MQ server.</value>
+        <null name="extensionName"/>
+        <null name="certified"/>
+        <value name="registry">licensed</value>
+        <value name="category">adapter</value>
+        <value name="registeredDate">21/10/2025</value>
+        <Boolean name="installed">true</Boolean>
+        <Boolean name="latest">true</Boolean>
+        <Boolean name="allowDeleteApplication">false</Boolean>
+        <Boolean name="allowUpdateApplication">false</Boolean>
+        <Boolean name="accountReferenceResolved">true</Boolean>
+        <Boolean name="serviceReferenceResolved">true</Boolean>
+        <array name="map" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <array name="mapDelete" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <array name="transformer" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <array name="lookupTransformer" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <null name="mapSet"/>
+        <array name="inputMap" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <array name="outputMap" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <number name="ui_step_index" type="Long">4</number>
+        <value name="nodePathNew">3</value>
+        <number name="nodeIndex" type="Long">3</number>
+        <number name="lineNumberForDebug" type="Long">4</number>
+        <Boolean name="xmlMapsetSupported">true</Boolean>
+        <null name="outputMapSet"/>
       </record>
     </record>
   </record>
