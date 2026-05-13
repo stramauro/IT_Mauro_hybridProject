@@ -975,7 +975,7 @@
 
   <!-- nodes -->
 
-<MAP NAME="Invoke predefined:com.wm.adapter.wmjdbc.JDBCAdapter" MODE="INPUT">
+<MAP NAME="Invoke predefined:WmMQAdapter" MODE="INPUT">
   <COMMENT></COMMENT>
   <MAPTARGET>
 
@@ -1016,6 +1016,17 @@
         <value name="form_qualified">false</value>
         <value name="is_global">false</value>
       </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">$connectionAlias</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
     </array>
     <value name="modifiable">true</value>
   </record>
@@ -1042,7 +1053,7 @@
 
   <!-- nodes -->
 
-<MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" GLOBALVARIABLES="false" FIELD="/$connectionName;1;0">
+<MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" GLOBALVARIABLES="false" FIELD="/$connectionAlias;1;0">
   <DATA ENCODING="XMLValues" I18N="true">
 
 <Values version="2.0">
