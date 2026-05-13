@@ -197,7 +197,7 @@
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
     <value name="lastModifiedBy">Mauro.Stramazzotti@ibm.com</value>
-    <value name="lastModifiedDate">1778704147165</value>
+    <value name="lastModifiedDate">1778704168232</value>
     <value name="displayName">ADD_ORDER</value>
     <value name="description"></value>
     <array name="appList" type="record" depth="1">
@@ -241,6 +241,14 @@
         <Boolean name="allowCustomOperations">true</Boolean>
         <value name="appType">predefined</value>
         <Boolean name="hasAccount">true</Boolean>
+        <record name="connection" javaclass="com.wm.util.Values">
+          <value name="connectionName">PostgreSQL_Mauro</value>
+          <value name="connectionType">IBM webMethods Adapter for JDBC ExtendedConnection</value>
+          <null name="description"/>
+        </record>
+        <value name="connectionNSName">PostgreSQL_Mauro</value>
+        <value name="connectionType">IBM webMethods Adapter for JDBC ExtendedConnection</value>
+        <Boolean name="accountReferenceResolved">true</Boolean>
       </record>
       <record name="/3" javaclass="com.wm.util.Values">
         <value name="itemType">SERVICES</value>
