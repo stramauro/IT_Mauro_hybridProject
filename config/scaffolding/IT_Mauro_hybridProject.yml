@@ -264,7 +264,7 @@ configurationVariables:
   ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmKafkaAdapter.com_wm_adapter_wmkafka_KafkaAdapter.connections.ApacheKafka_Mauro.connectionManagerSettings.poolable
   : "false"
   ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBMMQ_Mauro_local.connectionSettings.channel
-  : SYSTEM.DEF.SVRCONN
+  : MY.SVRCONN
   ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmKafkaAdapter.com_wm_adapter_wmkafka_KafkaAdapter.connections.ApacheKafka_Mauro.connectionManagerSettings.expireTimeout
   : "1000"
   jdbc.SAP TxStore Pool.driverAlias: MySQL CC Driver
@@ -288,7 +288,7 @@ configurationVariables:
   ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.PostgreSQL_Mauro.connectionSettings.otherProperties
   : loginTimeout=60;
   ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBMMQ_Mauro_local.connectionSettings.userId
-  : ""
+  : mqclientuser
   ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmKafkaAdapter.com_wm_adapter_wmkafka_KafkaAdapter.connections.ApacheKafka_Mauro.connectionManagerSettings.startupRetryCount
   : "0"
   ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.PostgreSQL_Mauro.connectionManagerSettings.startupRetryCount
@@ -341,7 +341,7 @@ configurationVariables:
   ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBMMQ_Mauro_local.connectionManagerSettings.heartBeatInterval
   : "0"
   ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBMMQ_Mauro_local.connectionSettings.password
-  : "{AES}aYrXC43dTWsDUHRWG5mhTA=="
+  : "{AES}fpe4U10DcIr57GuIe9i8Ig=="
   ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.PostgreSQL_Mauro.connectionManagerSettings.blockingTimeout
   : "1000"
   ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBMMQ_Mauro_local.connectionManagerSettings.startupBackoffSecs
