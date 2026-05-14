@@ -229,7 +229,7 @@
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
     <value name="lastModifiedBy">Mauro.Stramazzotti@ibm.com</value>
-    <value name="lastModifiedDate">1778765902490</value>
+    <value name="lastModifiedDate">1778766172820</value>
     <value name="displayName">ADD_ORDER_withMQ</value>
     <value name="description"></value>
     <array name="appList" type="record" depth="1">
@@ -368,6 +368,26 @@
         <value name="nodePathForDebug">2</value>
       </record>
       <record name="/3" javaclass="com.wm.util.Values">
+        <null name="name"/>
+        <value name="itemType">SERVICES</value>
+        <record name="serviceInfo" javaclass="com.wm.util.Values">
+          <value name="groupDisplayName">String</value>
+          <value name="groupName">string</value>
+          <null name="services"/>
+        </record>
+        <record name="serviceName" javaclass="com.wm.util.Values">
+          <value name="displayName">concat</value>
+          <value name="serviceName">pub.string:concat</value>
+          <value name="transformerSupport">true</value>
+        </record>
+        <number name="ui_step_index" type="Long">4</number>
+        <value name="nodePathNew">3</value>
+        <number name="nodeIndex" type="Long">3</number>
+        <number name="lineNumberForDebug" type="Long">4</number>
+        <null name="mapSet"/>
+        <null name="outputMapSet"/>
+      </record>
+      <record name="/4" javaclass="com.wm.util.Values">
         <value name="name">IBM MQ</value>
         <value name="itemType">APPS</value>
         <record name="operation" javaclass="com.wm.util.Values">
