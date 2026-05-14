@@ -117,7 +117,7 @@ services:
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
-- serviceName: project.it_mauro_hybrid.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections:IBMMQ_Mauro_local
+- serviceName: project.it_mauro_hybrid.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.operations.actions:writeQueue
   packages:
   - name: IT_Mauro_hybridProject
     version: "1.0"
@@ -152,7 +152,39 @@ services:
 - serviceName: pub.date:getCurrentDate
   packages:
   - name: WmPublic
-    version: 12.1.0.0.810
+    version: 12.1.0.0.828
+- serviceName: project.it_mauro_hybrid.integrations:ADD_ORDER_withMQ
+  packages:
+  - name: IT_Mauro_hybridProject
+    version: "1.0"
+  - name: WmMQAdapter
+    version: 6.5.0.0.19
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+  - name: WmKafkaAdapter
+    version: 9.6.0.0.26
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+- serviceName: project.it_mauro_hybrid.integrations:Copy_ADD_ORDER2
+  packages:
+  - name: IT_Mauro_hybridProject
+    version: "1.0"
+  - name: WmMQAdapter
+    version: 6.5.0.0.19
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+  - name: WmKafkaAdapter
+    version: 9.6.0.0.26
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
 - serviceName: project.it_mauro_hybrid.integrations:DELETE_ORDER
   packages:
   - name: IT_Mauro_hybridProject
@@ -188,7 +220,7 @@ services:
 - serviceName: pub.json:documentToJSONString
   packages:
   - name: WmPublic
-    version: 12.1.0.0.810
+    version: 12.1.0.0.828
 - serviceName: project.it_mauro_hybrid.integrations:GET_SINGLE_ORDER
   packages:
   - name: IT_Mauro_hybridProject
@@ -285,10 +317,10 @@ configurationVariables:
   : ""
   ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBMMQ_Mauro_local.connectionManagerSettings.maximumPoolSize
   : "10"
-  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.PostgreSQL_Mauro.connectionSettings.otherProperties
-  : loginTimeout=60;
   ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBMMQ_Mauro_local.connectionSettings.userId
   : mqclientuser
+  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.PostgreSQL_Mauro.connectionSettings.otherProperties
+  : loginTimeout=60;
   ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmKafkaAdapter.com_wm_adapter_wmkafka_KafkaAdapter.connections.ApacheKafka_Mauro.connectionManagerSettings.startupRetryCount
   : "0"
   ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.PostgreSQL_Mauro.connectionManagerSettings.startupRetryCount
@@ -330,12 +362,12 @@ configurationVariables:
   : com.wm.adapter.wmkafka.idata.IDataDeserializer
   ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBMMQ_Mauro_local.connectionManagerSettings.blockingTimeout
   : "1000"
-  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmKafkaAdapter.com_wm_adapter_wmkafka_KafkaAdapter.connections.ApacheKafka_Mauro.connectionSettings.keyDeserializer
-  : com.wm.adapter.wmkafka.idata.IDataDeserializer
   ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBMMQ_Mauro_local.connectionSettings.queueName
   : QUEUE1
   ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBMMQ_Mauro_local.connectionSettings.dynamicQueuePrefix
   : ""
+  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmKafkaAdapter.com_wm_adapter_wmkafka_KafkaAdapter.connections.ApacheKafka_Mauro.connectionSettings.keyDeserializer
+  : com.wm.adapter.wmkafka.idata.IDataDeserializer
   jdbc.SAP TxStore Pool.spyenabled: "false"
   jdbc.SAP TxStore Pool.useSSL: "false"
   ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBMMQ_Mauro_local.connectionManagerSettings.heartBeatInterval
@@ -348,10 +380,10 @@ configurationVariables:
   : "10"
   ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmKafkaAdapter.com_wm_adapter_wmkafka_KafkaAdapter.connections.ApacheKafka_Mauro.connectionManagerSettings.blockingTimeout
   : "1000"
-  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmKafkaAdapter.com_wm_adapter_wmkafka_KafkaAdapter.connections.ApacheKafka_Mauro.connectionSettings.groupId
-  : IWHI
   ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBMMQ_Mauro_local.connectionSettings.sslCipherSpec
   : TLS_RSA_WITH_AES_128_CBC_SHA256
+  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmKafkaAdapter.com_wm_adapter_wmkafka_KafkaAdapter.connections.ApacheKafka_Mauro.connectionSettings.groupId
+  : IWHI
   ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBMMQ_Mauro_local.connectionSettings.sslOptions
   : ""
   jdbc.SAP TxStore Pool.minConns: "5"
@@ -403,9 +435,9 @@ configurationVariables:
   : demo_db
   ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.PostgreSQL_Mauro.connectionSettings.dbType
   : POSTGRESQL
-  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.PostgreSQL_Mauro.connectionManagerSettings.poolable
-  : "false"
   ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBMMQ_Mauro_local.connectionEnabled
+  : "false"
+  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.PostgreSQL_Mauro.connectionManagerSettings.poolable
   : "false"
   ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.PostgreSQL_Mauro.connectionEnabled
   : "false"
