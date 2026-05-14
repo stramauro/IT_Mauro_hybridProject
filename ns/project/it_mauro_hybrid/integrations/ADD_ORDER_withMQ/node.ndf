@@ -229,7 +229,7 @@
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
     <value name="lastModifiedBy">Mauro.Stramazzotti@ibm.com</value>
-    <value name="lastModifiedDate">1778766172820</value>
+    <value name="lastModifiedDate">1778766210447</value>
     <value name="displayName">ADD_ORDER_withMQ</value>
     <value name="description"></value>
     <array name="appList" type="record" depth="1">
@@ -437,10 +437,10 @@
         </array>
         <array name="outputMap" type="object" depth="1" javaclass="java.lang.Object">
         </array>
-        <number name="ui_step_index" type="Long">4</number>
-        <value name="nodePathNew">3</value>
-        <number name="nodeIndex" type="Long">3</number>
-        <number name="lineNumberForDebug" type="Long">4</number>
+        <number name="ui_step_index" type="Long">5</number>
+        <value name="nodePathNew">4</value>
+        <number name="nodeIndex" type="Long">4</number>
+        <number name="lineNumberForDebug" type="Long">5</number>
         <Boolean name="xmlMapsetSupported">true</Boolean>
         <null name="outputMapSet"/>
       </record>
