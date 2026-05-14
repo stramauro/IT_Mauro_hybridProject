@@ -197,7 +197,7 @@
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
     <value name="lastModifiedBy">Mauro.Stramazzotti@ibm.com</value>
-    <value name="lastModifiedDate">1778751175869</value>
+    <value name="lastModifiedDate">1778751587431</value>
     <value name="displayName">ADD_ORDER</value>
     <value name="description"></value>
     <array name="appList" type="record" depth="1">
@@ -257,17 +257,6 @@
         <number name="lineNumberForDebug" type="Long">3</number>
       </record>
       <record name="/3" javaclass="com.wm.util.Values">
-        <value name="itemType">SERVICES</value>
-        <record name="serviceName" javaclass="com.wm.util.Values">
-          <value name="displayName">bytesToString</value>
-          <value name="serviceName">pub.string:bytesToString</value>
-          <value name="transformerSupport">true</value>
-        </record>
-        <value name="nodePathNew">3</value>
-        <number name="nodeIndex" type="Long">3</number>
-        <number name="lineNumberForDebug" type="Long">4</number>
-      </record>
-      <record name="/4" javaclass="com.wm.util.Values">
         <value name="name">IBM MQ</value>
         <value name="itemType">APPS</value>
         <record name="operation" javaclass="com.wm.util.Values">
