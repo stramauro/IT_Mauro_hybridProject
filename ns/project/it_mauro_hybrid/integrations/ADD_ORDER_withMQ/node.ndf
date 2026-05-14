@@ -229,7 +229,7 @@
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
     <value name="lastModifiedBy">Mauro.Stramazzotti@ibm.com</value>
-    <value name="lastModifiedDate">1778766210447</value>
+    <value name="lastModifiedDate">1778769687989</value>
     <value name="displayName">ADD_ORDER_withMQ</value>
     <value name="description"></value>
     <array name="appList" type="record" depth="1">
@@ -386,6 +386,8 @@
         <number name="lineNumberForDebug" type="Long">4</number>
         <null name="mapSet"/>
         <null name="outputMapSet"/>
+        <Boolean name="serviceReferenceResolved">true</Boolean>
+        <value name="nodePathForDebug">3</value>
       </record>
       <record name="/4" javaclass="com.wm.util.Values">
         <value name="name">IBM MQ</value>
@@ -443,6 +445,7 @@
         <number name="lineNumberForDebug" type="Long">5</number>
         <Boolean name="xmlMapsetSupported">true</Boolean>
         <null name="outputMapSet"/>
+        <value name="nodePathForDebug">4</value>
       </record>
     </record>
   </record>
