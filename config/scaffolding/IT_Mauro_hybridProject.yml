@@ -153,6 +153,42 @@ services:
   packages:
   - name: WmPublic
     version: 12.1.0.0.828
+- serviceName: project.it_mauro_hybrid.integrations:ADD_ORDER_withMQ
+  packages:
+  - name: IT_Mauro_hybridProject
+    version: "1.0"
+  - name: WmMQAdapter
+    version: 6.5.0.0.19
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+  - name: WmKafkaAdapter
+    version: 9.6.0.0.26
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+- serviceName: pub.string:concat
+  packages:
+  - name: WmPublic
+    version: 12.1.0.0.828
+- serviceName: project.it_mauro_hybrid.integrations:Copy_ADD_ORDER2
+  packages:
+  - name: IT_Mauro_hybridProject
+    version: "1.0"
+  - name: WmMQAdapter
+    version: 6.5.0.0.19
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+  - name: WmKafkaAdapter
+    version: 9.6.0.0.26
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
 - serviceName: project.it_mauro_hybrid.integrations:DELETE_ORDER
   packages:
   - name: IT_Mauro_hybridProject
