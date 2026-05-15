@@ -1157,7 +1157,7 @@
 
   <!-- nodes -->
 
-<MAPCOPY FROM="/first_name;1;0" TO="/message;1;0">
+<MAPCOPY FROM="/last_name;1;0" TO="/message;1;0">
 </MAPCOPY>
 </MAP>
 
