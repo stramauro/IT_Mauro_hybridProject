@@ -20,6 +20,10 @@ packages:
   wpmServer: https://packages.webmethods.io
   wpmRegistry: licensed
   wpmVersion: latest
+- name: WmSAP
+  wpmServer: https://packages.webmethods.io
+  wpmRegistry: licensed
+  wpmVersion: latest
 services:
 - serviceName: project.it_mauro_hybrid.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:ADD_ORDER
   packages:
@@ -262,90 +266,17 @@ services:
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
 configurationVariables:
-  jdbc.SAP TxStore Pool.maxConns: "10"
-  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBMMQ_Mauro_local.connectionSettings.sslTrustStoreAlias
-  : ""
-  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmKafkaAdapter.com_wm_adapter_wmkafka_KafkaAdapter.connections.ApacheKafka_Mauro.connectionManagerSettings.minimumPoolSize
-  : "1"
-  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.PostgreSQL_Mauro.connectionSettings.driverType
-  : postgresql_jdbc
-  jdbc.SAP TxStore Pool.password: "{AES}nrGf3u7Wt20hFBGh5ZeEuQ=="
-  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.PostgreSQL_Mauro.connectionSettings.keyStore
-  : ""
-  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBMMQ_Mauro_local.connectionSettings.recvExit
-  : ""
-  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.PostgreSQL_Mauro.connectionManagerSettings.heartBeatInterval
-  : "0"
-  jdbc.SAP TxStore Pool.spyparms: SpyAttributes=(log=(file)logs/spy/SAP_TxStore_Pool.log;logTName=yes;timestamp=yes)
-  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBMMQ_Mauro_local.connectionSettings.CCSID
-  : CP819
-  jdbc.SAP TxStore Pool.snoopenabled: "false"
-  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.PostgreSQL_Mauro.connectionSettings.portNumber
-  : "5432"
-  jdbc.SAP TxStore Pool.expireTime: "60000"
-  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBMMQ_Mauro_local.connectionSettings.ccdtFilePath
-  : ""
-  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmKafkaAdapter.com_wm_adapter_wmkafka_KafkaAdapter.connections.ApacheKafka_Mauro.connectionManagerSettings.poolable
-  : "false"
-  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBMMQ_Mauro_local.connectionSettings.channel
-  : MY.SVRCONN
-  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmKafkaAdapter.com_wm_adapter_wmkafka_KafkaAdapter.connections.ApacheKafka_Mauro.connectionManagerSettings.expireTimeout
-  : "1000"
-  jdbc.SAP TxStore Pool.driverAlias: MySQL CC Driver
-  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmKafkaAdapter.com_wm_adapter_wmkafka_KafkaAdapter.connections.ApacheKafka_Mauro.connectionManagerSettings.poolIncrementSize
-  : "1"
-  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmKafkaAdapter.com_wm_adapter_wmkafka_KafkaAdapter.connections.ApacheKafka_Mauro.connectionSettings.serverList
-  : apache-broker:9092
-  jdbcfunc.SAPTxStore.connPoolAlias: SAP TxStore Pool
-  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.PostgreSQL_Mauro.connectionManagerSettings.maximumPoolSize
-  : "10"
-  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.PostgreSQL_Mauro.connectionSettings.user
-  : postgres
-  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.PostgreSQL_Mauro.connectionSettings.datasourceClass
-  : org.postgresql.ds.PGSimpleDataSource
-  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBMMQ_Mauro_local.connectionManagerSettings.poolIncrementSize
-  : "1"
-  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBMMQ_Mauro_local.connectionSettings.securityExit
-  : ""
-  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBMMQ_Mauro_local.connectionManagerSettings.maximumPoolSize
-  : "10"
-  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBMMQ_Mauro_local.connectionSettings.userId
-  : mqclientuser
-  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.PostgreSQL_Mauro.connectionSettings.otherProperties
-  : loginTimeout=60;
-  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmKafkaAdapter.com_wm_adapter_wmkafka_KafkaAdapter.connections.ApacheKafka_Mauro.connectionManagerSettings.startupRetryCount
-  : "0"
-  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.PostgreSQL_Mauro.connectionManagerSettings.startupRetryCount
-  : "0"
-  jdbc.SAP TxStore Pool.waitingThread: "10"
-  jdbc.SAP TxStore Pool.description: Connection Pool for the SAP Transaction Store
-  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBMMQ_Mauro_local.connectionSettings.sendExitInit
-  : ""
-  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmKafkaAdapter.com_wm_adapter_wmkafka_KafkaAdapter.connections.ApacheKafka_Mauro.connectionEnabled
-  : "false"
-  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.PostgreSQL_Mauro.connectionSettings.networkProtocol
-  : ""
-  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmKafkaAdapter.com_wm_adapter_wmkafka_KafkaAdapter.connections.ApacheKafka_Mauro.connectionManagerSettings.maximumPoolSize
-  : "10"
-  jdbc.SAP TxStore Pool.snoopparms: ddtdbg.ProtocolTraceEnable=true;ddtdbg.ProtocolTraceMaxline=16;ddtdbg.ProtocolTraceLocation=logs/snoop/SAP_TxStore_Pool.log;ddtdbg.ProtocolTraceShowTime=true
-  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBMMQ_Mauro_local.connectionSettings.cacheOverriddenConnections
-  : "true"
-  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBMMQ_Mauro_local.connectionSettings.queueManagerName
-  : QMA
-  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBMMQ_Mauro_local.connectionSettings.port
-  : "1414"
-  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBMMQ_Mauro_local.connectionSettings.sendExit
-  : ""
-  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.PostgreSQL_Mauro.connectionSettings.password
-  : "{AES}aYrXC43dTWsDUHRWG5mhTA=="
-  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmKafkaAdapter.com_wm_adapter_wmkafka_KafkaAdapter.connections.ApacheKafka_Mauro.connectionSettings.enableAutoCommit
-  : "true"
   ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.PostgreSQL_Mauro.connectionSettings.trustStore
   : ""
   ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmKafkaAdapter.com_wm_adapter_wmkafka_KafkaAdapter.connections.ApacheKafka_Mauro.connectionManagerSettings.startupBackoffSecs
   : "10"
   ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.PostgreSQL_Mauro.connectionManagerSettings.startupBackoffSecs
   : "10"
+  jdbc.SAP TxStore Pool.maxConns: "10"
+  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBMMQ_Mauro_local.connectionSettings.sslTrustStoreAlias
+  : ""
+  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmKafkaAdapter.com_wm_adapter_wmkafka_KafkaAdapter.connections.ApacheKafka_Mauro.connectionManagerSettings.minimumPoolSize
+  : "1"
   jdbcfunc.SAPTxStore.failFastMode: false
   jdbc.SAP TxStore Pool.poolThreshold: "0"
   ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmKafkaAdapter.com_wm_adapter_wmkafka_KafkaAdapter.connections.ApacheKafka_Mauro.connectionSettings.autoCommitInterval
@@ -354,6 +285,8 @@ configurationVariables:
   : com.wm.adapter.wmkafka.idata.IDataDeserializer
   ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBMMQ_Mauro_local.connectionManagerSettings.blockingTimeout
   : "1000"
+  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.PostgreSQL_Mauro.connectionSettings.driverType
+  : postgresql_jdbc
   ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBMMQ_Mauro_local.connectionSettings.queueName
   : QUEUE1
   ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBMMQ_Mauro_local.connectionSettings.dynamicQueuePrefix
@@ -366,67 +299,138 @@ configurationVariables:
   : "0"
   ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBMMQ_Mauro_local.connectionSettings.password
   : "{AES}fpe4U10DcIr57GuIe9i8Ig=="
+  jdbc.SAP TxStore Pool.password: "{AES}nrGf3u7Wt20hFBGh5ZeEuQ=="
+  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.PostgreSQL_Mauro.connectionSettings.keyStore
+  : ""
   ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.PostgreSQL_Mauro.connectionManagerSettings.blockingTimeout
   : "1000"
   ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBMMQ_Mauro_local.connectionManagerSettings.startupBackoffSecs
   : "10"
   ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmKafkaAdapter.com_wm_adapter_wmkafka_KafkaAdapter.connections.ApacheKafka_Mauro.connectionManagerSettings.blockingTimeout
   : "1000"
+  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBMMQ_Mauro_local.connectionSettings.recvExit
+  : ""
   ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBMMQ_Mauro_local.connectionSettings.sslCipherSpec
   : TLS_RSA_WITH_AES_128_CBC_SHA256
   ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmKafkaAdapter.com_wm_adapter_wmkafka_KafkaAdapter.connections.ApacheKafka_Mauro.connectionSettings.groupId
   : IWHI
+  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.PostgreSQL_Mauro.connectionManagerSettings.heartBeatInterval
+  : "0"
+  jdbc.SAP TxStore Pool.spyparms: SpyAttributes=(log=(file)logs/spy/SAP_TxStore_Pool.log;logTName=yes;timestamp=yes)
+  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBMMQ_Mauro_local.connectionSettings.CCSID
+  : CP819
+  jdbc.SAP TxStore Pool.snoopenabled: "false"
   ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBMMQ_Mauro_local.connectionSettings.sslOptions
   : ""
+  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.PostgreSQL_Mauro.connectionSettings.portNumber
+  : "5432"
+  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBMMQ_Mauro_local.connectionSettings.ccdtFilePath
+  : ""
+  jdbc.SAP TxStore Pool.expireTime: "60000"
+  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmKafkaAdapter.com_wm_adapter_wmkafka_KafkaAdapter.connections.ApacheKafka_Mauro.connectionManagerSettings.poolable
+  : "false"
   jdbc.SAP TxStore Pool.minConns: "5"
+  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBMMQ_Mauro_local.connectionSettings.channel
+  : MY.SVRCONN
+  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmKafkaAdapter.com_wm_adapter_wmkafka_KafkaAdapter.connections.ApacheKafka_Mauro.connectionManagerSettings.expireTimeout
+  : "1000"
+  jdbc.SAP TxStore Pool.driverAlias: MySQL CC Driver
+  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmKafkaAdapter.com_wm_adapter_wmkafka_KafkaAdapter.connections.ApacheKafka_Mauro.connectionManagerSettings.poolIncrementSize
+  : "1"
   ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmKafkaAdapter.com_wm_adapter_wmkafka_KafkaAdapter.connections.ApacheKafka_Mauro.connectionSettings.deserializerErrorHandler
   : ""
   ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBMMQ_Mauro_local.connectionManagerSettings.poolable
   : "false"
+  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmKafkaAdapter.com_wm_adapter_wmkafka_KafkaAdapter.connections.ApacheKafka_Mauro.connectionSettings.serverList
+  : apache-broker:9092
+  jdbcfunc.SAPTxStore.connPoolAlias: SAP TxStore Pool
   ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.PostgreSQL_Mauro.connectionSettings.transactionType
   : NO_TRANSACTION
+  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.PostgreSQL_Mauro.connectionManagerSettings.maximumPoolSize
+  : "10"
   ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBMMQ_Mauro_local.connectionSettings.encoding
   : 00273-Native
   ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBMMQ_Mauro_local.connectionManagerSettings.startupRetryCount
   : "0"
+  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.PostgreSQL_Mauro.connectionSettings.user
+  : postgres
+  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.PostgreSQL_Mauro.connectionSettings.datasourceClass
+  : org.postgresql.ds.PGSimpleDataSource
+  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBMMQ_Mauro_local.connectionManagerSettings.poolIncrementSize
+  : "1"
   jdbc.SAP TxStore Pool.dbURL: jdbc:mysql://localhost:3306/SAPTRANSACTIONSTORE?useSSL=false&characterEncoding=utf-8&autoReconnect=true&maxReconnects=5&sessionVariables=wait_timeout=2147483
   ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBMMQ_Mauro_local.connectionSettings.securityExitInit
   : ""
+  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBMMQ_Mauro_local.connectionSettings.securityExit
+  : ""
+  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBMMQ_Mauro_local.connectionManagerSettings.maximumPoolSize
+  : "10"
   ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.PostgreSQL_Mauro.connectionSettings.serverName
   : postgres-cdc
   ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBMMQ_Mauro_local.connectionManagerSettings.minimumPoolSize
   : "1"
+  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBMMQ_Mauro_local.connectionSettings.userId
+  : mqclientuser
+  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.PostgreSQL_Mauro.connectionSettings.otherProperties
+  : loginTimeout=60;
   ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmKafkaAdapter.com_wm_adapter_wmkafka_KafkaAdapter.connections.ApacheKafka_Mauro.connectionSettings.seesionTimeOut
   : "45000"
+  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmKafkaAdapter.com_wm_adapter_wmkafka_KafkaAdapter.connections.ApacheKafka_Mauro.connectionManagerSettings.startupRetryCount
+  : "0"
+  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.PostgreSQL_Mauro.connectionManagerSettings.startupRetryCount
+  : "0"
+  jdbc.SAP TxStore Pool.waitingThread: "10"
   ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmKafkaAdapter.com_wm_adapter_wmkafka_KafkaAdapter.connections.ApacheKafka_Mauro.connectionSettings.clientID
   : ""
+  jdbc.SAP TxStore Pool.description: Connection Pool for the SAP Transaction Store
   ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBMMQ_Mauro_local.connectionSettings.hostName
   : host.docker.internal
   ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmKafkaAdapter.com_wm_adapter_wmkafka_KafkaAdapter.connections.ApacheKafka_Mauro.connectionSettings.autoOffsetReset
   : earliest
+  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBMMQ_Mauro_local.connectionSettings.sendExitInit
+  : ""
   ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBMMQ_Mauro_local.connectionManagerSettings.expireTimeout
   : "1000"
   ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.PostgreSQL_Mauro.connectionManagerSettings.expireTimeout
   : "1000"
   ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBMMQ_Mauro_local.connectionSettings.sslKeyStoreAlias
   : ""
+  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmKafkaAdapter.com_wm_adapter_wmkafka_KafkaAdapter.connections.ApacheKafka_Mauro.connectionEnabled
+  : "false"
+  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.PostgreSQL_Mauro.connectionSettings.networkProtocol
+  : ""
   ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.PostgreSQL_Mauro.connectionManagerSettings.minimumPoolSize
   : "1"
   ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBMMQ_Mauro_local.connectionSettings.sslKeyStorePassword
   : "{AES}aYrXC43dTWsDUHRWG5mhTA=="
+  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmKafkaAdapter.com_wm_adapter_wmkafka_KafkaAdapter.connections.ApacheKafka_Mauro.connectionManagerSettings.maximumPoolSize
+  : "10"
+  jdbc.SAP TxStore Pool.snoopparms: ddtdbg.ProtocolTraceEnable=true;ddtdbg.ProtocolTraceMaxline=16;ddtdbg.ProtocolTraceLocation=logs/snoop/SAP_TxStore_Pool.log;ddtdbg.ProtocolTraceShowTime=true
+  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBMMQ_Mauro_local.connectionSettings.cacheOverriddenConnections
+  : "true"
+  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBMMQ_Mauro_local.connectionSettings.queueManagerName
+  : QMA
   ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBMMQ_Mauro_local.connectionSettings.sslKeyStore
   : ""
   ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBMMQ_Mauro_local.connectionSettings.recvExitInit
   : ""
+  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBMMQ_Mauro_local.connectionSettings.port
+  : "1414"
+  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBMMQ_Mauro_local.connectionSettings.sendExit
+  : ""
   jdbc.SAP TxStore Pool.userid: root
   ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.PostgreSQL_Mauro.connectionManagerSettings.poolIncrementSize
   : "1"
+  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.PostgreSQL_Mauro.connectionSettings.password
+  : "{AES}aYrXC43dTWsDUHRWG5mhTA=="
   ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmKafkaAdapter.com_wm_adapter_wmkafka_KafkaAdapter.connections.ApacheKafka_Mauro.connectionSettings.kafkaVersion
   : v11+
   ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.PostgreSQL_Mauro.connectionSettings.databaseName
   : demo_db
   ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.PostgreSQL_Mauro.connectionSettings.dbType
   : POSTGRESQL
+  ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmKafkaAdapter.com_wm_adapter_wmkafka_KafkaAdapter.connections.ApacheKafka_Mauro.connectionSettings.enableAutoCommit
+  : "true"
   ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections.IBMMQ_Mauro_local.connectionEnabled
   : "false"
   ? artConnection.IT_Mauro_hybridProject.project.it_mauro_hybrid.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.PostgreSQL_Mauro.connectionManagerSettings.poolable
