@@ -46,7 +46,7 @@
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
     <value name="lastModifiedBy">Mauro.Stramazzotti@ibm.com</value>
-    <value name="lastModifiedDate">1779698704554</value>
+    <value name="lastModifiedDate">1779698738972</value>
     <value name="displayName">GET_ORDERS</value>
     <value name="description"></value>
     <array name="appList" type="record" depth="1">

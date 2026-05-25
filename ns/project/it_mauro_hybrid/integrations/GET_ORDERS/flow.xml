@@ -494,6 +494,9 @@
 
 <MAPCOPY FROM="/READ_ORDERS_TABLEOutput;2;0/results;2;1/quantity_1;3.6;0" TO="/READ_ORDERS_TABLEOutput;2;0/results;2;1/quantity_1;3.6;0">
 </MAPCOPY>
+
+<MAPCOPY FROM="/READ_ORDERS_TABLEOutput;2;0/tot_orders;3.6;0" TO="/READ_ORDERS_TABLEOutput;2;0/tot_orders;3.6;0">
+</MAPCOPY>
 </MAP>
 </INVOKE>
 
