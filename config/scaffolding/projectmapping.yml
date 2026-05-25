@@ -13,11 +13,6 @@ runtimes:
     uid: fl51871a85afcbde23ee4f8b
     stepId: a4
     reference: project.it_mauro_hybrid.integrations:DELETE_ORDER
-  - name: INSERT NEW ORDER
-    type: workflow
-    uid: fla9247985012a3bc77a0553
-    stepId: a4
-    reference: project.it_mauro_hybrid.integrations:ADD_ORDER
   - name: GET SINGLE ORDER
     type: workflow
     uid: fl6af187878882b0213ec746
@@ -33,3 +28,8 @@ runtimes:
     uid: fl134900dfe48a4848966f9f97646cbc14
     stepId: ga4a2
     reference: project.it_mauro_hybrid.integrations:UPDATE_ORDER
+  - name: INSERT NEW ORDER
+    type: workflow
+    uid: fla9247985012a3bc77a0553
+    stepId: a11
+    reference: project.it_mauro_hybrid.integrations:ADD_ORDER_withMQ
