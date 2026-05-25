@@ -209,6 +209,10 @@ services:
   packages:
   - name: WmPublic
     version: 12.1.0.0.828
+- serviceName: pub.flow:debugLog
+  packages:
+  - name: WmPublic
+    version: 12.1.0.0.828
 - serviceName: project.it_mauro_hybrid.integrations:GET_SINGLE_ORDER
   packages:
   - name: IT_Mauro_hybridProject
