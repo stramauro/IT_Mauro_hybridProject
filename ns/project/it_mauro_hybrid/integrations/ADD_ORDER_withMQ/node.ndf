@@ -229,7 +229,7 @@
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
     <value name="lastModifiedBy">Mauro.Stramazzotti@ibm.com</value>
-    <value name="lastModifiedDate">1778769687989</value>
+    <value name="lastModifiedDate">1779699544945</value>
     <value name="displayName">ADD_ORDER_withMQ</value>
     <value name="description"></value>
     <array name="appList" type="record" depth="1">

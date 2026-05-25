@@ -1651,6 +1651,15 @@
 </Values>
 </DATA>
 </MAPSET>
+
+<MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" GLOBALVARIABLES="false" FIELD="/$connectionName;1;0">
+  <DATA ENCODING="XMLValues" I18N="true">
+
+<Values version="2.0">
+  <value name="xml">project.it_mauro_hybrid.WmMQAdapter.com_wm_adapter_wmmqadapter_wmMQAdapter.connections:IBMMQ_Mauro_local</value>
+</Values>
+</DATA>
+</MAPSET>
 </MAP>
 
 <MAP MODE="OUTPUT">
